@@ -1,0 +1,93 @@
+steps:
+  STG_SYS_USER-4ad8d986-7fd9-4748-b140-5fbdb418959e:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SERVICENOW
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 7722c64b-ac22-4488-b76a-9f5a82fc02c1
+              stepCounter: 4ad8d986-7fd9-4748-b140-5fbdb418959e
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 55b42520-4902-4e9f-8e53-8c7d93a90f46
+                    stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+                transform: ""
+          - columnReference:
+              columnCounter: 24d5d5bc-1874-4755-a4db-f14e870513fd
+              stepCounter: 4ad8d986-7fd9-4748-b140-5fbdb418959e
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RAW
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b77deea1-da35-42ec-bdac-4d744e17e410
+                    stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+                transform: ""
+          - columnReference:
+              columnCounter: 05175ba2-46e4-4563-8bf4-37617f128088
+              stepCounter: 4ad8d986-7fd9-4748-b140-5fbdb418959e
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 087ac712-af39-471c-a610-3cf5a5e3f770
+                    stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+                transform: ""
+          - columnReference:
+              columnCounter: 57e5f820-7b99-4699-8090-6303a8cd293b
+              stepCounter: 4ad8d986-7fd9-4748-b140-5fbdb418959e
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 339b2608-112e-474a-bba1-8ab6b2178986
+                    stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SERVICENOW
+                nodeName: SYS_USER
+            join:
+              joinCondition: FROM {{ ref('SERVICENOW', 'SYS_USER') }} "SYS_USER"
+            name: STG_SYS_USER
+            noLinkRefs: []
+      name: STG_SYS_USER
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 4ad8d986-7fd9-4748-b140-5fbdb418959e

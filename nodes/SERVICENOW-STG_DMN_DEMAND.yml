@@ -1,0 +1,104 @@
+steps:
+  STG_DMN_DEMAND-cbfcd0b4-1547-473d-a8b7-9d07855ce088:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: |-
+          create or replace table "Servicenow_dest_db"."dest_schema"."stg_dmn_demand"(
+          SELECT
+              SYS_ID,
+              KEY,
+              PATH,
+              to_varchar(VALUE) as value
+          FROM 
+              DMN_DEMAND, 
+              LATERAL FLATTEN(INPUT =>
+          PARSE_JSON(RAW)) AS FLATTENED
+          WHERE IS_DELETED = FALSE)
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SERVICENOW
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 75aebb56-3456-40f8-850c-fc5b6722e166
+              stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: df7f4edb-a879-4e46-a6f1-c74e8071cb3a
+                    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+                transform: ""
+          - columnReference:
+              columnCounter: 99a59468-0307-4dc9-8f63-7acefc0e709a
+              stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RAW
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d8f8d768-4ff7-4890-a0ba-989d528e140c
+                    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+                transform: ""
+          - columnReference:
+              columnCounter: 3a6cf6c1-67a6-4ba7-855d-191b9cd4cc83
+              stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cd8331eb-f3b0-4724-a005-6baa57c828de
+                    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+                transform: ""
+          - columnReference:
+              columnCounter: fe201dcd-56fd-4e68-8d9c-fa11e332a9bf
+              stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e218a4a3-070c-4e5e-86d3-fec6f568e13a
+                    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SERVICENOW
+                nodeName: DMN_DEMAND
+            join:
+              joinCondition: FROM {{ ref('SERVICENOW', 'DMN_DEMAND') }} "DMN_DEMAND"
+            name: STG_DMN_DEMAND
+            noLinkRefs: []
+      name: STG_DMN_DEMAND
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088

@@ -1,0 +1,78 @@
+steps:
+  DMN_DEMAND-99e8d059-462f-4c79-902b-e8bb4c04d500:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SERVICENOW
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: df7f4edb-a879-4e46-a6f1-c74e8071cb3a
+              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d8f8d768-4ff7-4890-a0ba-989d528e140c
+              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cd8331eb-f3b0-4724-a005-6baa57c828de
+              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e218a4a3-070c-4e5e-86d3-fec6f568e13a
+              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SERVICENOW', 'DMN_DEMAND') }}
+      name: DMN_DEMAND
+      schema: ""
+      sqlType: Source
+      table: DMN_DEMAND
+      type: sourceInput
+    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
