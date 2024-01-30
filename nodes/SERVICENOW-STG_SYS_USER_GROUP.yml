@@ -235,13 +235,30 @@ steps:
             config: {}
             dataType: STRING
             description: ""
-            name: manager
+            name: manager_link
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 4d4a7a3b-e49a-4bb5-aceb-e8b764d398a6
                     stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
-                transform: "\"SYS_USER_GROUP\".\"RAW\":\"manager\"::STRING"
+                transform: "\"SYS_USER_GROUP\".\"RAW\":\"manager\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 28f235a7-df3b-4c83-9cae-8fe8c2377193
+              stepCounter: abd227a3-3683-4241-81dd-3f2b245adbcc
+            config: {}
+            dataType: STRING
+            description: ""
+            name: manager_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4d4a7a3b-e49a-4bb5-aceb-e8b764d398a6
+                    stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
+                transform: "\"SYS_USER_GROUP\".\"RAW\":\"manager\".\"value\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
