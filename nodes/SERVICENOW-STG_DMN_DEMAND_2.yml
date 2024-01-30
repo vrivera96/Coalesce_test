@@ -2410,6 +2410,69 @@ steps:
                   - columnCounter: 4a125c8b-f50a-4cba-84f3-14fcaebcb008
                     stepCounter: 4ad8d986-7fd9-4748-b140-5fbdb418959e
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 47f4dc05-1c63-49b5-a204-7aacddde6584
+              stepCounter: e8c819cc-ba1f-4a93-b611-52ac1cbd964d
+            config: {}
+            dataType: INTEGER
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: crt_to_sub
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: timestampdiff(days, "STG_DMN_DEMAND"."sys_created_on", "STG_DMN_DEMAND"."submitted_date")
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ca6d12f7-70c2-4dfe-a6d7-aedbb82a5b8e
+              stepCounter: e8c819cc-ba1f-4a93-b611-52ac1cbd964d
+            config: {}
+            dataType: INTEGER
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: sub_to_sprt
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: timestampdiff(days, "STG_DMN_DEMAND"."submitted_date", "STG_DMN_DEMAND"."u_sprint_state_changed_date")
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c428db49-4bb8-49fe-9e1d-35e4b160cf88
+              stepCounter: e8c819cc-ba1f-4a93-b611-52ac1cbd964d
+            config: {}
+            dataType: INTEGER
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: sprt_to_cls
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: timestampdiff(days, "STG_DMN_DEMAND"."u_sprint_state_changed_date", "STG_DMN_DEMAND"."closed_at")
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
