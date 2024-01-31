@@ -1387,7 +1387,15 @@ steps:
               - columnReferences:
                   - columnCounter: 0a122284-639a-43d5-855c-b9c33f20d0c1
                     stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
-                transform: ""
+                transform: |-
+                  case 
+                      when "STG_DMN_DEMAND"."priority" = '1' then '1-Critical'
+                      when "STG_DMN_DEMAND"."priority" = '2' then '2-High'
+                      when "STG_DMN_DEMAND"."priority" = '3' then '3-Moderate'
+                      when "STG_DMN_DEMAND"."priority" = '4' then '4-Low'
+                      when "STG_DMN_DEMAND"."priority" = '5' then '5-Planning'
+                      else 'None'
+                  end 
           - columnReference:
               columnCounter: cb200e56-e0f0-4e00-86a3-359719033f41
               stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4

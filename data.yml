@@ -1,6 +1,13 @@
 defaultStorageMapping: SERVICENOW
 installedPackages: {}
-jobs: {}
+jobs:
+  Job-1:
+    excludeSelector: ""
+    id: 1
+    includeSelector: "+{ location: SERVICENOW name: STG_DMN_DEMAND_2 }"
+    name: Demands
+    steps: []
+    subgraphs: []
 locations: {}
 macros: {}
 packages: {}
