@@ -2498,13 +2498,13 @@ steps:
             join:
               joinCondition: |-
                 FROM {{ ref('SERVICENOW', 'STG_DMN_DEMAND') }} "STG_DMN_DEMAND"
-                INNER JOIN {{ ref('SERVICENOW', 'STG_SYS_USER_GROUP') }} "STG_SYS_USER_GROUP"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_SYS_USER_GROUP') }} "STG_SYS_USER_GROUP"
                 ON "STG_DMN_DEMAND"."assignment_group_value" = "STG_SYS_USER_GROUP"."sys_id"
-                INNER JOIN {{ ref('SERVICENOW', 'STG_SYS_USER') }} "STG_SYS_USER"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_SYS_USER') }} "STG_SYS_USER"
                 ON "STG_DMN_DEMAND"."assigned_to_value" = "STG_SYS_USER"."sys_id"
-                INNER JOIN {{ ref('SERVICENOW', 'STG_SERVICE_OFFERING') }} "STG_SERVICE_OFFERING"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_SERVICE_OFFERING') }} "STG_SERVICE_OFFERING"
                 ON "STG_DMN_DEMAND"."service_offering_value" = "STG_SERVICE_OFFERING"."sys_id"
-                INNER JOIN {{ ref('SERVICENOW', 'STG_CMN_DEPARTMENT_AGENCY') }} "STG_CMN_DEPARTMENT_AGENCY"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_CMN_DEPARTMENT_AGENCY') }} "STG_CMN_DEPARTMENT_AGENCY"
                 ON "STG_DMN_DEMAND"."department_value" = "STG_CMN_DEPARTMENT_AGENCY"."SYS_ID"
             name: STG_DMN_DEMAND_2
             noLinkRefs: []
