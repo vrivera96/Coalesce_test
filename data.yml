@@ -8,7 +8,12 @@ jobs:
     name: Demands
     steps: []
     subgraphs: []
-locations: {}
+locations:
+  SERVICENOW:
+    mappingDefinitions:
+      "7":
+        database: SERVICENOW_DEST_DB
+        schema: DEST_PROD
 macros: {}
 packages: {}
 projects: {}
