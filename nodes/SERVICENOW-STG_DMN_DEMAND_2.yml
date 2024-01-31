@@ -1793,7 +1793,20 @@ steps:
               - columnReferences:
                   - columnCounter: 68371662-e532-4683-8ae1-22ca1e6dcc4c
                     stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
-                transform: ""
+                transform: |-
+                  case 
+                          when "STG_DMN_DEMAND"."state" = -4 then 'Qualified'
+                          when "STG_DMN_DEMAND"."state" = 1 then 'Draft'
+                          when "STG_DMN_DEMAND"."state" = 2 then 'Submitted'
+                          when "STG_DMN_DEMAND"."state" = 3 then 'Screening'
+                          when "STG_DMN_DEMAND"."state" = 5 then 'Incomplete'
+                          when "STG_DMN_DEMAND"."state" = 7 then 'Rejected'
+                          when "STG_DMN_DEMAND"."state" = 8 then 'Approved'
+                          when "STG_DMN_DEMAND"."state" = 9 then 'Completed'
+                          when "STG_DMN_DEMAND"."state" = 10 then 'Deferred'
+                          when "STG_DMN_DEMAND"."state" = 11 then 'Closed-Moved'
+                          else ''
+                      end
           - columnReference:
               columnCounter: c27f34ce-f069-48fc-bee0-eab44c0d59d3
               stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4
@@ -2157,7 +2170,14 @@ steps:
               - columnReferences:
                   - columnCounter: 659bf1fc-b4dc-4f01-9d7c-ac7f59444a2f
                     stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
-                transform: ""
+                transform: |-
+                  case
+                          when "STG_DMN_DEMAND"."u_approved_for_sprint" = '1' then 'Approved'
+                          when "STG_DMN_DEMAND"."u_approved_for_sprint" = '2' then 'Queued'
+                          when "STG_DMN_DEMAND"."u_approved_for_sprint" = '3' then 'Reviewed'
+                          when "STG_DMN_DEMAND"."u_approved_for_sprint" = '4' then 'Exempt'
+                          else ''
+                      end
           - columnReference:
               columnCounter: 898927c4-2e9a-4057-ab7b-e5ff87752fec
               stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4
