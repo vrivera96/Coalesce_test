@@ -1,0 +1,78 @@
+steps:
+  BUSINESS_UNIT-5eddbcfc-dfe8-46ec-91ac-d2842ceb447c:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SERVICENOW
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d0f0d31e-37be-4d56-9382-9c9ea991ad36
+              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d5b3dfbd-d8f8-45d4-874b-c61262340a9a
+              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ecde6684-2213-4567-ac47-23ca19a0a9ac
+              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bee303eb-ee3b-4a12-a9e1-741f9cb900bc
+              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SERVICENOW', 'BUSINESS_UNIT') }}
+      name: BUSINESS_UNIT
+      schema: ""
+      sqlType: Source
+      table: BUSINESS_UNIT
+      type: sourceInput
+    stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c

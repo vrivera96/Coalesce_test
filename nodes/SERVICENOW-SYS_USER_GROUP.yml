@@ -1,0 +1,78 @@
+steps:
+  SYS_USER_GROUP-78fcc1a6-d4da-42ce-b943-4a824f900e67:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SERVICENOW
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cf52f495-0548-45f9-b35a-d70a4938ebae
+              stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4d4a7a3b-e49a-4bb5-aceb-e8b764d398a6
+              stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9ae5612a-2ddf-4419-a678-f7ea028af1c3
+              stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 206d9e2b-d8ef-4c3c-9706-45653722612a
+              stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SERVICENOW', 'SYS_USER_GROUP') }}
+      name: SYS_USER_GROUP
+      schema: ""
+      sqlType: Source
+      table: SYS_USER_GROUP
+      type: sourceInput
+    stepCounter: 78fcc1a6-d4da-42ce-b943-4a824f900e67
