@@ -1,0 +1,78 @@
+steps:
+  PM_PORTFOLIO-cc66c067-8d38-4d11-a5e2-1619922ffb15:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SN_PROJECTS
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0135a20c-c88a-4878-b7cc-1dad54756e8c
+              stepCounter: cc66c067-8d38-4d11-a5e2-1619922ffb15
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1621e921-290e-43f1-8493-bb907c59eaeb
+              stepCounter: cc66c067-8d38-4d11-a5e2-1619922ffb15
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 852ff789-31f6-497e-9e79-fa16531c614f
+              stepCounter: cc66c067-8d38-4d11-a5e2-1619922ffb15
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4148fa2d-9206-42e1-9873-a1738658a55f
+              stepCounter: cc66c067-8d38-4d11-a5e2-1619922ffb15
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SN_PROJECTS', 'PM_PORTFOLIO') }}
+      name: PM_PORTFOLIO
+      schema: ""
+      sqlType: Source
+      table: PM_PORTFOLIO
+      type: sourceInput
+    stepCounter: cc66c067-8d38-4d11-a5e2-1619922ffb15

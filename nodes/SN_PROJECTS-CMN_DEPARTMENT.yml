@@ -1,0 +1,78 @@
+steps:
+  CMN_DEPARTMENT-7b45ff10-3ad5-4fdf-bf05-0142f569352b:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SN_PROJECTS
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7612839b-e225-46f4-adb2-a7841a39c63f
+              stepCounter: 7b45ff10-3ad5-4fdf-bf05-0142f569352b
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 18cfc155-d58a-4864-9941-cc912e8d497a
+              stepCounter: 7b45ff10-3ad5-4fdf-bf05-0142f569352b
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7cd4e2f0-f16f-4174-835f-77ea1eda8467
+              stepCounter: 7b45ff10-3ad5-4fdf-bf05-0142f569352b
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ace6f050-9176-4b84-9303-81098676e069
+              stepCounter: 7b45ff10-3ad5-4fdf-bf05-0142f569352b
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SN_PROJECTS', 'CMN_DEPARTMENT') }}
+      name: CMN_DEPARTMENT
+      schema: ""
+      sqlType: Source
+      table: CMN_DEPARTMENT
+      type: sourceInput
+    stepCounter: 7b45ff10-3ad5-4fdf-bf05-0142f569352b

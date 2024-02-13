@@ -1,29 +1,16 @@
-defaultStorageMapping: SERVICENOW
+defaultStorageMapping: SN_PROJECTS
 installedPackages: {}
 jobs: {}
-locations: {}
+locations:
+  SN_PROJECTS:
+    mappingDefinitions:
+      "7":
+        database: SERVICENOW_DEST_DB
+        schema: DEST_SCHEMA
 macros: {}
 packages: {}
 projects: {}
 stepTypes:
-  StepType-2:
-    id: "2"
-    isDisabled: false
-    metadata:
-      defaultStorageLocation: null
-      error: null
-      nodeMetadataSpec: |-
-        capitalized: 'SQL Script'
-        short: 'SQL'
-        tagColor: orange
-        plural: 'SQL Scripts'
-      templates:
-        create:
-          templateString: ""
-        run:
-          templateString: ""
-    name: New Type
-    version: 1
   StepType-Dimension:
     id: Dimension
     isDisabled: false
@@ -935,7 +922,7 @@ stepTypes:
     version: 1
   StepType-View:
     id: View
-    isDisabled: true
+    isDisabled: false
     metadata:
       defaultStorageLocation: null
       error: null

@@ -1,11 +1,11 @@
 steps:
-  SYS_USER-84f733da-469d-4e7f-aeeb-cd386d229005:
+  PM_PROJECT-e9f29a76-e74f-4344-a7ce-f3c398e15698:
     operation:
       database: ""
       dataset: ""
       deployEnabled: true
       description: ""
-      locationName: SERVICENOW
+      locationName: SN_PROJECTS
       metadata:
         columns:
           - acceptedValues:
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 55b42520-4902-4e9f-8e53-8c7d93a90f46
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: d213ecd0-d6c9-4b02-8471-1a897dfa5b02
+              stepCounter: e9f29a76-e74f-4344-a7ce-f3c398e15698
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b77deea1-da35-42ec-bdac-4d744e17e410
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: 6e23b60c-b918-421f-8697-4bf4255f9b7d
+              stepCounter: e9f29a76-e74f-4344-a7ce-f3c398e15698
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 087ac712-af39-471c-a610-3cf5a5e3f770
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: ea6494ee-4c86-44ce-9536-8290740b6a54
+              stepCounter: e9f29a76-e74f-4344-a7ce-f3c398e15698
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 339b2608-112e-474a-bba1-8ab6b2178986
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: 97a474ac-07d0-47f5-a6e1-d4bc12fb9d95
+              stepCounter: e9f29a76-e74f-4344-a7ce-f3c398e15698
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -69,10 +69,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SERVICENOW', 'SYS_USER') }}
-      name: SYS_USER
+          joinCondition: FROM {{ ref('SN_PROJECTS', 'PM_PROJECT') }}
+      name: PM_PROJECT
       schema: ""
       sqlType: Source
-      table: SYS_USER
+      table: PM_PROJECT
       type: sourceInput
-    stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+    stepCounter: e9f29a76-e74f-4344-a7ce-f3c398e15698

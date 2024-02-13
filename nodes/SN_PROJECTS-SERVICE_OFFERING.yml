@@ -1,11 +1,11 @@
 steps:
-  BUSINESS_UNIT-5eddbcfc-dfe8-46ec-91ac-d2842ceb447c:
+  SERVICE_OFFERING-ac49fabd-c337-4328-96d7-761abccd942e:
     operation:
       database: ""
       dataset: ""
       deployEnabled: true
       description: ""
-      locationName: SERVICENOW
+      locationName: SN_PROJECTS
       metadata:
         columns:
           - acceptedValues:
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d0f0d31e-37be-4d56-9382-9c9ea991ad36
-              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+              columnCounter: 3fc1382b-04df-4feb-a5d0-0690cef88aba
+              stepCounter: ac49fabd-c337-4328-96d7-761abccd942e
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d5b3dfbd-d8f8-45d4-874b-c61262340a9a
-              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+              columnCounter: 36936c12-e298-4844-a9d8-047293fc2d94
+              stepCounter: ac49fabd-c337-4328-96d7-761abccd942e
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ecde6684-2213-4567-ac47-23ca19a0a9ac
-              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+              columnCounter: a65ea600-d119-4300-a492-093fc281a221
+              stepCounter: ac49fabd-c337-4328-96d7-761abccd942e
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: bee303eb-ee3b-4a12-a9e1-741f9cb900bc
-              stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+              columnCounter: 72788dd2-18ac-4014-b2cf-a602f814bf3a
+              stepCounter: ac49fabd-c337-4328-96d7-761abccd942e
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -69,10 +69,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SERVICENOW', 'BUSINESS_UNIT') }}
-      name: BUSINESS_UNIT
+          joinCondition: FROM {{ ref('SN_PROJECTS', 'SERVICE_OFFERING') }}
+      name: SERVICE_OFFERING
       schema: ""
       sqlType: Source
-      table: BUSINESS_UNIT
+      table: SERVICE_OFFERING
       type: sourceInput
-    stepCounter: 5eddbcfc-dfe8-46ec-91ac-d2842ceb447c
+    stepCounter: ac49fabd-c337-4328-96d7-761abccd942e
