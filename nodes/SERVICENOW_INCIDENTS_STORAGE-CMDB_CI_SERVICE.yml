@@ -1,0 +1,78 @@
+steps:
+  CMDB_CI_SERVICE-781e62ae-f28f-4cc1-9d99-dbd201d7017e:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SERVICENOW_INCIDENTS_STORAGE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1b29bd2d-0e35-45bd-8211-8772e3d99a23
+              stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+              stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0b39a38e-d691-4f54-967f-38e5b75251e7
+              stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a06742f9-6f17-4944-8cf7-20701b28742e
+              stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'CMDB_CI_SERVICE') }}
+      name: CMDB_CI_SERVICE
+      schema: ""
+      sqlType: Source
+      table: CMDB_CI_SERVICE
+      type: sourceInput
+    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e

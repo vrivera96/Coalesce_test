@@ -1,0 +1,78 @@
+steps:
+  INCIDENT-3d3b7604-83ea-4d06-998e-c11f045407bd:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SERVICENOW_INCIDENTS_STORAGE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c2f02592-e97b-4928-9970-37be5de5a473
+              stepCounter: 3d3b7604-83ea-4d06-998e-c11f045407bd
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: SYS_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 68c0344f-5101-41d2-9442-4040ab922d2d
+              stepCounter: 3d3b7604-83ea-4d06-998e-c11f045407bd
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9f091bf6-0d88-4321-8613-07e38c10ca45
+              stepCounter: 3d3b7604-83ea-4d06-998e-c11f045407bd
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f5548b7c-fc34-45e1-bc4e-fad6e2c5cebc
+              stepCounter: 3d3b7604-83ea-4d06-998e-c11f045407bd
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LAST_UPDATE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'INCIDENT') }}
+      name: INCIDENT
+      schema: ""
+      sqlType: Source
+      table: INCIDENT
+      type: sourceInput
+    stepCounter: 3d3b7604-83ea-4d06-998e-c11f045407bd

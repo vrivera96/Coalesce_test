@@ -1,0 +1,629 @@
+steps:
+  STG_CMN_LOCATION-6b9db8fb-9819-4963-a38c-63d02c5b5d4a:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SERVICENOW_INCIDENTS_STORAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 23b83f45-ab61-4e68-a02c-2ab3fc0718c7
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2be4d236-597e-432f-9ec7-f9f29210fde4
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: de67e6ef-8631-4515-adb9-8aa31f2d445d
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: city
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"city\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9ba3fd36-2568-4eac-bbc8-80b9848c1f5c
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: cmn_location_source
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"cmn_location_source\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5b283e68-f1d0-4d21-966a-b40389fa9bfe
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: cmn_location_type
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"cmn_location_type\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e472fb34-cb89-42df-9783-99f93a28ecae
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: company
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"company\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 60690a7b-ecf0-4e4a-8190-71ae37a3812e
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: contact
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"contact\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 514f66c9-65e0-4bc4-90c9-3c875ee6a3d4
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: coordinates_retrieved_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"coordinates_retrieved_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a5b1a7d5-9299-40de-b96d-2260647a0172
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: country
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"country\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 627e6d10-8b93-4ba6-a0ee-39db414a7f08
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: duplicate
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"duplicate\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4f40fa59-91db-4b06-a338-df8c6c652b3f
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: fax_phone
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"fax_phone\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8b3797c1-8e35-4e8c-a34e-2a442fdeeaa2
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: full_name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"full_name\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ec46a9b2-e72d-49ef-a53a-5dd0b424d125
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: latitude
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"latitude\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 79ad4d12-d846-4075-b721-0d920729cf49
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: lat_long_error
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"lat_long_error\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 05630a06-841c-4300-b3a9-2b8d957db52e
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: life_cycle_stage
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"life_cycle_stage\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1fad58f8-2bb6-4051-97d2-3e15e156afbe
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: life_cycle_stage_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"life_cycle_stage_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 845f3b67-f6dd-4d2c-b8f3-59cfae2021d5
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: longitude
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"longitude\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 712e3a11-96de-4b0c-8ea8-56c32e0d86b6
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: managed_by_group
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"managed_by_group\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: db3a6ee4-d1c9-4531-97e8-7f9dd0f7391d
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"name\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f5b296e9-c86b-42b9-bb26-53b16111163f
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: parent_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"parent\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8d59e6ff-0a18-46ec-ad1f-d4c6943882c1
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: parent_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"parent\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c6c77c3f-d8ca-4245-b8ae-764d0788176f
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: phone
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"phone\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 833cdd58-a03c-4511-bc89-e76f3fd4302e
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: phone_territory
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"phone_territory\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3f68cede-2ad0-4b2e-a962-53cf5ad54e44
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: primary_location
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"primary_location\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a6cf8ac0-15bd-486f-880c-55f7d4d88a70
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: state
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"state\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0b47216c-4198-45a9-aa0a-684936113847
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: stock_room
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"stock_room\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3b94a8a8-7495-4374-828c-0bdf4a87c7fd
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: street
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"street\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5899bc75-26ce-424c-b2e8-53226da53c60
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_created_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_created_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6a983407-5c69-4a30-976f-50351af91b29
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_created_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_created_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 352eb62f-406e-43e1-98cc-abc417b345fc
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_id\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b1bd81f5-5ac8-45a6-98f7-e2c848fcb08f
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_mod_count
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_mod_count\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 01862335-26c7-4d47-9084-614675f6bd05
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_tags
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_tags\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2636b9f3-caf8-476d-b194-c79154686e37
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_updated_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_updated_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fefade68-c4c0-42a5-9b5d-0e60095a241d
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_updated_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"sys_updated_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f5f31634-5236-4d15-9130-c6296cd943bb
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: time_zone
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"time_zone\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0b37f33b-6e22-42dc-a415-94718dd7738a
+              stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
+            config: {}
+            dataType: STRING
+            description: ""
+            name: zip
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a6829646-d950-4d93-b5a5-4b9501b84c3a
+                    stepCounter: 83219d0a-7527-4da2-a39d-e719210f64b3
+                transform: "\"CMN_LOCATION\".\"RAW\":\"zip\"::STRING"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SERVICENOW_INCIDENTS_STORAGE
+                nodeName: CMN_LOCATION
+            join:
+              joinCondition: FROM {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'CMN_LOCATION') }} "CMN_LOCATION"
+            name: STG_CMN_LOCATION
+            noLinkRefs: []
+      name: STG_CMN_LOCATION
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a

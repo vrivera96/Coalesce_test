@@ -1,0 +1,2023 @@
+steps:
+  STG_CMDB_CI_SERVICE-1dfd1085-ad52-4ae6-baee-f8575245a79f:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SERVICENOW_INCIDENTS_STORAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 40d920de-7650-4ec1-9926-36c4318a3460
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0b39a38e-d691-4f54-967f-38e5b75251e7
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 37d09247-2ae2-4757-8141-dc3df9e1d810
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: aliases
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"aliases\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a70f93a3-3cf0-480d-a1cd-adbcfd81eab7
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: asset
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"asset\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: daec9f52-e827-4a2f-a740-46c13d6f7c1f
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: asset_tag
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"asset_tag\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 850ba5e0-4cf8-4206-8aa2-b265e950abe3
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: assigned
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"assigned\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3b542939-686e-42e5-931a-c2fbd7f9567a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: assigned_to
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"assigned_to\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2bcad112-6a54-4448-be4e-40796718680c
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: assignment_group
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"assignment_group\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 971ab1c1-29bf-45ef-bb27-a3438208d50c
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: attestation_score
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"attestation_score\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2ad7d7f1-ddca-4ebd-a30e-c2ab9976cc68
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: attestation_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"attestation_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dffe1967-549c-44b4-8527-79f38c596885
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: attested
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"attested\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1858f509-4a15-4268-a256-6701f0ca0774
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: attested_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"attested_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d7503e46-0e9c-49ee-a4b3-2a49d7c017ba
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: attested_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"attested_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0a61594e-8ed7-4f29-9a1c-a7678cc810cf
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: attributes
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"attributes\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 98b3be51-14fc-4e71-bee4-63992f9a283a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: business_contact
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"business_contact\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: faed8a26-a6ad-41f7-9c98-233efd5a96ab
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: business_need
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"business_need\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d3808145-a9a5-43ac-8716-0defdd939a53
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: business_relation_manager
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"business_relation_manager\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 97886e84-da63-4130-9a84-af1332ca6223
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: business_unit
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"business_unit\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 114a6f18-8014-4c9b-9fa2-17ed0ee3dd20
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: busines_criticality
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"busines_criticality\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f51bf281-9be1-4187-92d4-349e91475df4
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: can_print
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"can_print\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 61157434-a1f7-4fcf-b822-c8fce242392a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: category
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"category\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d8fc1900-f660-472b-a599-b5bc5b3b18f8
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: change_control
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"change_control\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 82bb7cf0-8d62-4e4f-8da9-377c776ff8e8
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: checked_in
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"checked_in\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 162f7894-ae16-4361-b286-2a8c5bc1db05
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: checked_out
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"checked_out\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 950646df-6b30-4b33-9ca4-501ff4432313
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: checkout
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"checkout\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d31df9be-5f2c-492d-9739-543ef385b8b2
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: comments
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"comments\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 172bfc72-06e5-4f98-93c3-c3aa46a92edd
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: company
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"company\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 44b44c1b-1e36-460f-96ab-0549d4c7b94a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: compatibility_dependencies
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"compatibility_dependencies\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 951566f8-2bff-4f53-bef3-23b28542d2c7
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: consumer_type
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"consumer_type\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 354e9f74-4498-41bf-bb4a-07e0c9be4968
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: correlation_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"correlation_id\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b8bdb79d-66ed-4997-8190-2866e65a541c
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: cost
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"cost\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d67643b8-ce63-47cf-a9ab-36bba56372a2
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: cost_cc
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"cost_cc\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b1237700-d0fc-4633-9d56-6e7aaa0a82a9
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: cost_center
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"cost_center\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3068154b-0db8-49b2-826a-bebe9ba5d8d4
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: delivery_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"delivery_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 17ee024a-0e4d-4fa6-ac3b-ccd66bbc0f52
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: delivery_manager
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"delivery_manager\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 75035fba-5dc8-4f1c-a82b-9fa986a52989
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: department
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"department\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f7f8a73c-b0e4-4da9-a616-c70f2a69a04a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: discovery_source
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"discovery_source\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5943af8a-6101-4bef-b6d8-7f7cec82462e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: dns_domain
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"dns_domain\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6ca1ee29-87c6-4ad5-b37e-76335a3a1441
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: due
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"due\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 968190f5-0603-4c29-8860-bdd512b6ec75
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: due_in
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"due_in\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 411d25cc-a04c-4f95-82da-fa6b019aad60
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: duplicate_of
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"duplicate_of\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0d815972-d1e8-43f1-847b-e02a9de8f16b
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: end_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"end_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 049dc30d-267b-4b3e-8b49-2c6ac290cde6
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: environment
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"environment\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 936becb1-d303-41cd-8f5a-fa45fd2194db
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: fault_count
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"fault_count\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 12c24eac-76f5-434f-9ab1-1c3a54470f61
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: first_discovered
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"first_discovered\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9a9598e0-f55a-4596-9ee4-644b41239621
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: fqdn
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"fqdn\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 14c52221-768f-4c4b-9520-1781bd86b7c8
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: gl_account
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"gl_account\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 049e47ab-2d12-4a4c-841d-9d60dbf73b70
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: install_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"install_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e50a20ad-4162-4978-b58f-17be9682af97
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: install_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"install_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a66fba0d-8f9a-498c-8cf9-5c9fc3c9aff3
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: invoice_number
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"invoice_number\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 55cfe9dc-2426-4892-bac3-d49414222a2a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: ip_address
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"ip_address\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c25ead29-c47f-4a12-a3d8-38d2fb8a686e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: justification
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"justification\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 69cbce9e-2f9f-4c30-841a-f392ec84392d
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: last_discovered
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"last_discovered\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 99d78107-93b3-412c-bdf1-1eb9c0e5f043
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: last_review_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"last_review_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e91539c0-394d-499a-94db-75278afbc9c0
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: lease_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"lease_id\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3dde4ba0-3752-482b-932c-36c9369548c7
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: life_cycle_stage
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"life_cycle_stage\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f7e0efe0-d627-4673-a746-ed88597240e4
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: life_cycle_stage_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"life_cycle_stage_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 01410c6e-cb4b-4e22-8c37-221335304187
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: location
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"location\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6226142d-1ce3-497d-be6d-494e363f7795
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: mac_address
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"mac_address\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4a089792-7e3f-4694-9da9-e3e7df70e199
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: maintenance_schedule
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"maintenance_schedule\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 05518bb5-5cf2-4c78-9ae1-824775140e64
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: managed_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"managed_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bbef33dc-5e55-42aa-8d60-666bfa88f3ae
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: managed_by_group
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"managed_by_group\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 59047872-0e58-4611-bf5d-8c2dff2a6ee2
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: manufacturer
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"manufacturer\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5e8bf141-fbc4-4eda-a0d7-8bc57c90a54e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: model_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"model_id\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d344b1f2-1fc4-4377-90fe-b4f5fb75e699
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: model_number
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"model_number\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6eb6e05f-453a-4c99-8e4b-e5933a91b80e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: monitor
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"monitor\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d779453e-e020-40c1-8a8b-19eb46005294
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: monitoring_requirements
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"monitoring_requirements\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: eac614e8-ea9c-4317-aa93-bea90599ef14
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"name\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 87cbb4e4-1158-44af-aaf8-a6263fc34994
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: number
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"number\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ace8eb54-0736-4140-ac25-728b5348cc55
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: operational_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"operational_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ca3321da-4e69-4c7f-a9d3-1c394c6a1591
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: order_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"order_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7db09623-6ef2-40ab-a768-2a1df88c863e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: owned_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"owned_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 77acc895-41a1-483e-8c87-17b601110a10
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: parent_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"parent\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 50334f1e-32f5-4876-880a-23dcda176789
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: parent_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"parent\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6a717689-5ade-42c7-8bc7-9b8a64baf673
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: portfolio_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"portfolio_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3990cb11-ea58-4205-92da-b24c5cffce1c
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: po_number
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"po_number\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 25bb88a6-c990-4ba5-be88-143c7abd54dd
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: prerequisites
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"prerequisites\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a61a4163-f100-4f5a-ba2b-14e922c668c3
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: price_model
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"price_model\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b61e927c-e6fa-4691-87ef-c0f9433d5faf
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: price_unit
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"price_unit\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bc431d7c-0827-4e91-a497-08f475af04da
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: published_ref
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"published_ref\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7aba22f5-01e9-46e1-a0ee-98b4a85115a7
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: purchase_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"purchase_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3758bdd6-b7d6-4876-81ae-54f84dd800fa
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: schedule
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"schedule\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7164189c-d15a-4b4b-bd16-09d3a5f61dcb
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: serial_number
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"serial_number\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3bd44e20-a267-40cd-a40c-73b3a391931b
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: service_classification
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"service_classification\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c7c12ef0-397d-4433-8071-8ac0028a2ab8
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: service_level_requirement
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"service_level_requirement\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f9906f76-ec1c-4920-b0e3-184ed596a9aa
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: service_owner_delegate
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"service_owner_delegate\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8b2df072-d548-45a6-94cc-99545b61db00
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: service_status
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"service_status\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e5e40c0f-72ed-4402-a06e-578da58565f0
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: short_description
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"short_description\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 03dc3cbf-a847-4ae4-a54e-1458b18a0330
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: skip_sync
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"skip_sync\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7947ef97-ecf5-464a-b789-43ba0dc30292
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sla
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sla\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 440b35dc-b208-4998-ab82-b506b9165694
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: spm_service_portfolio
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"spm_service_portfolio\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0fab605b-ff29-41d7-bb55-bb7747b45c71
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: spm_taxonomy_node
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"spm_taxonomy_node\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2f852dd2-6deb-4780-87bf-3190f512e48e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: stakeholders
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"stakeholders\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9d8ea1da-8dec-432c-9f5a-f195aa59c35a
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: start_date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"start_date\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 585cfbea-e03f-4332-b3cd-77aa633b8c94
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: state
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"state\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b81dcd95-865e-440a-abe1-d5aa05f3136c
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: subcategory
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"subcategory\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5c11ba76-c868-48c1-90e4-286c2f3e077d
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: supported_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"supported_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 129d4ac2-fd11-4b6a-b79b-18be3e327750
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: support_group_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"support_group\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e6daa5b3-337b-4393-89ac-a72f4b0f6afb
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: support_group_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"support_group\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 89316321-5e73-4c06-8daa-0b80ee87978e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_class_name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_class_name\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 845f3504-909d-4ae6-9f8a-7bdc4365507e
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_class_path
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_class_path\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dca5fcea-2ba2-472b-b216-d21d51dd0ea1
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_created_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_created_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6041ae10-0b39-49e2-b2f0-4d6a44fd5452
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_created_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_created_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 118a7c1c-d2e7-4642-8e51-73539ed01e65
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_domain_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_domain\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ac0610a5-50d4-479c-8c53-bc3d1f45b461
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_domain_path
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_domain_path\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b449a530-13ca-40f3-b0b8-6c254537ae6d
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_domain_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_domain\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1ec5ead8-0466-4695-b68d-0a45bb6ad7fb
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_id\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f569a2af-cf74-4243-8a33-9915ebc69873
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_mod_count
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_mod_count\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 78cde928-ad60-4309-a437-587b0cabd597
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_tags
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_tags\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3708e740-51ed-4855-83cc-c212cd821c6b
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_updated_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_updated_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ff2c7a4b-cd3a-4e4c-a1ea-36a056aaea93
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_updated_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"sys_updated_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7c573a47-74d6-40a9-8195-43f5c0a5c95b
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: unit_description
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"unit_description\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 07d94e11-296f-4d84-9b5b-878157767dd0
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: unverified
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"unverified\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 88e67dfd-7ede-448b-9723-5cf62c635fee
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: used_for
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"used_for\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2f59c5fb-1388-4353-bbe4-e21f442e4c64
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: user_group
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"user_group\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7f5e8f90-b611-4b1d-b57e-082182e71dbd
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: vendor
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"vendor\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: df22a611-fb1b-4e66-a550-d4b9b597eaaf
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: version
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"version\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 367ab742-639a-4c08-ac3c-28384b6788bc
+              stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
+            config: {}
+            dataType: STRING
+            description: ""
+            name: warranty_expiration
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 87404e03-23e5-4e26-b4fe-e0ed9def6816
+                    stepCounter: 781e62ae-f28f-4cc1-9d99-dbd201d7017e
+                transform: "\"CMDB_CI_SERVICE\".\"RAW\":\"warranty_expiration\"::STRING"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SERVICENOW_INCIDENTS_STORAGE
+                nodeName: CMDB_CI_SERVICE
+            join:
+              joinCondition: FROM {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'CMDB_CI_SERVICE') }} "CMDB_CI_SERVICE"
+            name: STG_CMDB_CI_SERVICE
+            noLinkRefs: []
+      name: STG_CMDB_CI_SERVICE
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 1dfd1085-ad52-4ae6-baee-f8575245a79f
