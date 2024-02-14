@@ -18,24 +18,6 @@ macros: {}
 packages: {}
 projects: {}
 stepTypes:
-  StepType-2:
-    id: "2"
-    isDisabled: false
-    metadata:
-      defaultStorageLocation: null
-      error: null
-      nodeMetadataSpec: |-
-        capitalized: 'SQL Script'
-        short: 'SQL'
-        tagColor: orange
-        plural: 'SQL Scripts'
-      templates:
-        create:
-          templateString: ""
-        run:
-          templateString: ""
-    name: New Type
-    version: 1
   StepType-Dimension:
     id: Dimension
     isDisabled: false
@@ -947,7 +929,7 @@ stepTypes:
     version: 1
   StepType-View:
     id: View
-    isDisabled: true
+    isDisabled: false
     metadata:
       defaultStorageLocation: null
       error: null

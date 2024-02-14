@@ -2001,7 +2001,7 @@ steps:
               columnCounter: c033ab07-fe39-47c8-aa53-1cdcd6b6d44e
               stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: sys_updated_on
             nullable: true
@@ -2009,7 +2009,7 @@ steps:
               - columnReferences:
                   - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
                     stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
-                transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_updated_on\"::STRING"
+                transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_updated_on\"::TIMESTAMP_NTZ"
           - acceptedValues:
               strictMatch: true
               values: []

@@ -23,7 +23,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: SYS_USER_RAW
+            name: RAW
             nullable: true
             sourceColumnReferences:
               - columnReferences:
