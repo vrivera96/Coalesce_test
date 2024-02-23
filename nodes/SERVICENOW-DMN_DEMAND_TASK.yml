@@ -1,5 +1,5 @@
 steps:
-  DMN_DEMAND-99e8d059-462f-4c79-902b-e8bb4c04d500:
+  DMN_DEMAND_TASK-f486622b-d12b-42b7-ace6-00d588f20eb8:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: df7f4edb-a879-4e46-a6f1-c74e8071cb3a
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: 887c5b14-a79a-401d-8b38-7fb5264d26b8
+              stepCounter: f486622b-d12b-42b7-ace6-00d588f20eb8
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d8f8d768-4ff7-4890-a0ba-989d528e140c
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: 182a8295-5394-44b0-b86f-c49ad487dd44
+              stepCounter: f486622b-d12b-42b7-ace6-00d588f20eb8
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: cd8331eb-f3b0-4724-a005-6baa57c828de
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: 834bc7f8-025c-4f50-b12d-0d85c199064b
+              stepCounter: f486622b-d12b-42b7-ace6-00d588f20eb8
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: e218a4a3-070c-4e5e-86d3-fec6f568e13a
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: 259920df-99a0-4e72-9841-bc6b478a921c
+              stepCounter: f486622b-d12b-42b7-ace6-00d588f20eb8
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -69,10 +69,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SERVICENOW', 'DMN_DEMAND') }}
-      name: DMN_DEMAND
+          joinCondition: FROM {{ ref('SERVICENOW', 'DMN_DEMAND_TASK') }}
+      name: DMN_DEMAND_TASK
       schema: ""
       sqlType: Source
-      table: DMN_DEMAND
+      table: DMN_DEMAND_TASK
       type: sourceInput
-    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+    stepCounter: f486622b-d12b-42b7-ace6-00d588f20eb8

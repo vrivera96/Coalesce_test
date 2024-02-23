@@ -13,7 +13,7 @@ locations:
     mappingDefinitions:
       "7":
         database: SERVICENOW_DEST_DB
-        schema: DEST_PROD
+        schema: DEST_SCHEMA
 macros: {}
 packages: {}
 projects: {}
