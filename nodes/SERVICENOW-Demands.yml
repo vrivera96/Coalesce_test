@@ -100,7 +100,7 @@ steps:
           - columnReference:
               columnCounter: 9cb0590e-9bcb-4fab-a08d-944ef53e627d
               stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: The demand Start date
             hashColumns: []
             hashDetails: null
@@ -114,7 +114,7 @@ steps:
           - columnReference:
               columnCounter: dfcd4750-46dc-44d7-92cc-b787bc610278
               stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: The demand due date
             hashColumns: []
             hashDetails: null
@@ -156,7 +156,7 @@ steps:
           - columnReference:
               columnCounter: be41fdab-2e29-4fef-81b4-4b09ce73a61a
               stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: The date the demand was submitted
             hashColumns: []
             hashDetails: null
@@ -352,7 +352,7 @@ steps:
           - columnReference:
               columnCounter: f0d7a4c3-ecae-4cb6-8065-bf851d2afd2b
               stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: The date the demand was closed at
             hashColumns: []
             hashDetails: null
@@ -366,7 +366,7 @@ steps:
           - columnReference:
               columnCounter: 710bd3ad-8e13-4edd-af7b-387d90bce503
               stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: The date the demand was created
             hashColumns: []
             hashDetails: null
@@ -394,7 +394,7 @@ steps:
           - columnReference:
               columnCounter: 6304aeff-2551-451b-a705-a25e223d2461
               stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: The most recent date the demand was updated
             hashColumns: []
             hashDetails: null

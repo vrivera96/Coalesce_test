@@ -182,7 +182,7 @@ steps:
               columnCounter: c93fab9b-ead8-4df9-adf9-35a238cd9796
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: approved_end_date
             nullable: true
@@ -199,7 +199,7 @@ steps:
               columnCounter: 6151a501-467f-4566-b35d-c6c02c482600
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: approved_start_date
             nullable: true
@@ -573,7 +573,7 @@ steps:
               columnCounter: 5b73181e-00c8-417d-84bf-49aba0e93d6b
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: closed_at
             nullable: true
@@ -998,7 +998,7 @@ steps:
               columnCounter: 5fd61bf1-9414-47de-95c7-ad3a2339e2bd
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: DATE
             description: ""
             name: due_date
             nullable: true
@@ -1100,7 +1100,7 @@ steps:
               columnCounter: b82ea0ad-fda4-41ff-b901-ce8a74c6b572
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: DATE
             description: ""
             name: expected_start
             nullable: true
@@ -1457,7 +1457,7 @@ steps:
               columnCounter: 1d01b918-2171-45e2-ab72-2fd7445c22d3
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: opened_at
             nullable: true
@@ -2137,7 +2137,7 @@ steps:
               columnCounter: f0479456-ad10-4ccb-acad-e2e1932d1678
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: start_date
             nullable: true
@@ -2188,7 +2188,7 @@ steps:
               columnCounter: eb1c03d1-04be-4bfc-99b1-17be86e604d7
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: submitted_date
             nullable: true
@@ -2273,7 +2273,7 @@ steps:
               columnCounter: 63388739-bb31-470f-be27-438648359f72
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: sys_created_on
             nullable: true
@@ -2409,7 +2409,7 @@ steps:
               columnCounter: c6f57768-016b-4f2c-bfd2-f82eb72b81c3
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: sys_updated_on
             nullable: true
@@ -2715,7 +2715,7 @@ steps:
               columnCounter: 01fbc732-f62d-4bc8-a1b6-d296f88226d8
               stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
             config: {}
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             name: u_sprint_state_changed_date
             nullable: true
