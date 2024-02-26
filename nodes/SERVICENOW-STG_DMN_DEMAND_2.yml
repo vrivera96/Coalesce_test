@@ -337,7 +337,11 @@ steps:
               - columnReferences:
                   - columnCounter: 1123b5ff-bf5f-4d18-8c7c-dcd2af21b107
                     stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
-                transform: ""
+                transform: |-
+                  case 
+                      when "STG_DMN_DEMAND"."department_value" = '9914e4e8dbeed4104fc5c6891396192d' then '9914e4e8dbeed4104fc5c6891396192d'
+                      else "STG_DMN_DEMAND"."business_unit_value"
+                  end 
           - columnReference:
               columnCounter: 954cdf12-97f6-472f-ba5d-a91b64a6e8e6
               stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4
@@ -2365,8 +2369,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 7104db94-0d84-4410-b715-6baf3f6bfa2c
-                    stepCounter: fea3c3df-e65f-4346-9f0c-acbcc76b211b
+                  - columnCounter: 982c41f7-39bc-4dc6-b005-9f82b4a93e72
+                    stepCounter: e6b4c142-7c3e-4b96-96c4-b4f3b4ac4338
                 transform: ""
           - columnReference:
               columnCounter: b61c29bb-4400-4530-9bed-4695d6dd076b
@@ -2379,9 +2383,9 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 81e06b2f-d713-4ae9-a6e1-4d440f92695c
-                    stepCounter: fea3c3df-e65f-4346-9f0c-acbcc76b211b
-                transform: Case when "STG_CMN_DEPARTMENT_AGENCY"."department_name" like 'Economic%' then 'Economic Development Agency' else "STG_CMN_DEPARTMENT_AGENCY"."agency" end
+                  - columnCounter: 52129879-9dbf-493c-901a-e81c8f7cbfaa
+                    stepCounter: f6c2e3ae-ef56-4c8a-b721-47e92eeca311
+                transform: Case when "STG_CMN_DEPARTMENT"."name" like 'Economic%' then 'Economic Development Agency' else "STG_BUSINESS_UNIT"."agency" end
           - acceptedValues:
               strictMatch: true
               values: []
@@ -2463,7 +2467,8 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_CMN_DEPARTMENT_AGENCY: fea3c3df-e65f-4346-9f0c-acbcc76b211b
+              STG_BUSINESS_UNIT: f6c2e3ae-ef56-4c8a-b721-47e92eeca311
+              STG_CMN_DEPARTMENT: e6b4c142-7c3e-4b96-96c4-b4f3b4ac4338
               STG_DMN_DEMAND: cbfcd0b4-1547-473d-a8b7-9d07855ce088
               STG_SERVICE_OFFERING: 2dc50713-77db-4c10-9243-aa1ce743cfd4
               STG_SYS_USER: 4ad8d986-7fd9-4748-b140-5fbdb418959e
@@ -2472,7 +2477,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: SERVICENOW
-                nodeName: STG_CMN_DEPARTMENT_AGENCY
+                nodeName: STG_BUSINESS_UNIT
+              - locationName: SERVICENOW
+                nodeName: STG_CMN_DEPARTMENT
               - locationName: SERVICENOW
                 nodeName: STG_DMN_DEMAND
               - locationName: SERVICENOW
@@ -2490,8 +2497,10 @@ steps:
                 ON "STG_DMN_DEMAND"."assigned_to_value" = "STG_SYS_USER"."sys_id"
                 LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_SERVICE_OFFERING') }} "STG_SERVICE_OFFERING"
                 ON "STG_DMN_DEMAND"."service_offering_value" = "STG_SERVICE_OFFERING"."sys_id"
-                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_CMN_DEPARTMENT_AGENCY') }} "STG_CMN_DEPARTMENT_AGENCY"
-                ON "STG_DMN_DEMAND"."department_value" = "STG_CMN_DEPARTMENT_AGENCY"."SYS_ID"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_CMN_DEPARTMENT') }} "STG_CMN_DEPARTMENT"
+                ON "STG_DMN_DEMAND"."department_value" = "STG_CMN_DEPARTMENT"."sys_id"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_BUSINESS_UNIT') }} "STG_BUSINESS_UNIT"
+                ON "STG_DMN_DEMAND"."business_unit_value" = "STG_BUSINESS_UNIT"."sys_id"
             name: STG_DMN_DEMAND_2
             noLinkRefs: []
       name: STG_DMN_DEMAND_2
