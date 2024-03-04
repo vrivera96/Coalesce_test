@@ -352,7 +352,7 @@ steps:
           - columnReference:
               columnCounter: 822e7403-d86b-4d75-95c1-fb9f49865ad0
               stepCounter: ba21e20b-87c4-4f04-868b-35ff17be6281
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             hashColumns: []
             hashDetails: null
@@ -1178,7 +1178,7 @@ steps:
           - columnReference:
               columnCounter: dbdb0663-7b09-41f9-a403-753f7a5482fc
               stepCounter: ba21e20b-87c4-4f04-868b-35ff17be6281
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             hashColumns: []
             hashDetails: null

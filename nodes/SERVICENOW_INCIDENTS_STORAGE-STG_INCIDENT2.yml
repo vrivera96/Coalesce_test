@@ -355,7 +355,7 @@ steps:
           - columnReference:
               columnCounter: 90950704-1c02-46b2-8eb2-7128ee177d7d
               stepCounter: 5dc0b2b6-90f3-41c8-a38a-25e87fd72300
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             hashColumns: []
             hashDetails: null
@@ -365,7 +365,7 @@ steps:
               - columnReferences:
                   - columnCounter: 32c5a4d0-ab7a-4fed-a2a3-27447caa1db9
                     stepCounter: cbef4bef-c604-4489-ab0b-6d33cf30003f
-                transform: ""
+                transform: TRY_TO_TIMESTAMP_NTZ("STG_INCIDENT"."closed_at")
           - columnReference:
               columnCounter: 691faf06-91ab-4ae6-b662-6af355039f20
               stepCounter: 5dc0b2b6-90f3-41c8-a38a-25e87fd72300
@@ -1213,7 +1213,7 @@ steps:
           - columnReference:
               columnCounter: 017c1178-07c5-43b1-8760-ea6491a7d96d
               stepCounter: 5dc0b2b6-90f3-41c8-a38a-25e87fd72300
-            dataType: STRING
+            dataType: TIMESTAMP_NTZ(9)
             description: ""
             hashColumns: []
             hashDetails: null
@@ -1223,7 +1223,7 @@ steps:
               - columnReferences:
                   - columnCounter: d19ee617-5646-4b2e-a840-11ec7e9538ff
                     stepCounter: cbef4bef-c604-4489-ab0b-6d33cf30003f
-                transform: ""
+                transform: TRY_TO_TIMESTAMP_NTZ("STG_INCIDENT"."sys_created_on")
           - columnReference:
               columnCounter: e2dc2990-af40-4418-9655-ac6c8928d5ce
               stepCounter: 5dc0b2b6-90f3-41c8-a38a-25e87fd72300
@@ -1874,7 +1874,7 @@ steps:
               STG_ASSIGNED_TO: 22eb1757-deb9-47db-8873-023048db3f6f
               STG_CALLER_ID: a5fa0398-36e6-4461-a29e-1e920438980b
               STG_CMDB_CI_SERVICE: 1dfd1085-ad52-4ae6-baee-f8575245a79f
-              STG_CMN_DEPARTMENT_BUSINESS_UNIT: 7939ee3a-9760-40bb-9d6f-9a3e17b85b35
+              STG_CMN_DEPARTMENT_AGENCY: 7939ee3a-9760-40bb-9d6f-9a3e17b85b35
               STG_CMN_LOCATION: 6b9db8fb-9819-4963-a38c-63d02c5b5d4a
               STG_CORE_COMPANY: ae4cb859-5ae5-4a4e-91b0-a95ce2274661
               STG_INCIDENT: cbef4bef-c604-4489-ab0b-6d33cf30003f
@@ -1892,7 +1892,7 @@ steps:
               - locationName: SERVICENOW_INCIDENTS_STORAGE
                 nodeName: STG_CMDB_CI_SERVICE
               - locationName: SERVICENOW_INCIDENTS_STORAGE
-                nodeName: STG_CMN_DEPARTMENT_BUSINESS_UNIT
+                nodeName: STG_CMN_DEPARTMENT_AGENCY
               - locationName: SERVICENOW_INCIDENTS_STORAGE
                 nodeName: STG_CMN_LOCATION
               - locationName: SERVICENOW_INCIDENTS_STORAGE
@@ -1926,8 +1926,8 @@ steps:
                 ON "STG_INCIDENT"."resolved_by_value" = "STG_RESOLVED_BY"."sys_id"
                 LEFT OUTER JOIN {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'STG_SERVICE_OFFERING') }} "STG_SERVICE_OFFERING"
                 ON "STG_INCIDENT"."service_offering_value" = "STG_SERVICE_OFFERING"."sys_id"
-                LEFT OUTER JOIN {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'STG_CMN_DEPARTMENT_BUSINESS_UNIT') }} "STG_CMN_DEPARTMENT_BUSINESS_UNIT"
-                ON "STG_INCIDENT"."u_department_value" = "STG_CMN_DEPARTMENT_BUSINESS_UNIT"."sys_id"
+                LEFT OUTER JOIN {{ ref('SERVICENOW_INCIDENTS_STORAGE', 'STG_CMN_DEPARTMENT_AGENCY') }} "STG_CMN_DEPARTMENT_AGENCY"
+                ON "STG_INCIDENT"."u_department_value" = "STG_CMN_DEPARTMENT_AGENCY"."sys_id"
                 LEFT OUTER JOIN {{ref('SERVICENOW_INCIDENTS_STORAGE', 'STG_CMDB_CI_SERVICE') }} "STG_CMDB_CI_SERVICE"
                 ON "STG_INCIDENT"."business_service_value" = "STG_CMDB_CI_SERVICE"."sys_id"
             name: STG_INCIDENT2
