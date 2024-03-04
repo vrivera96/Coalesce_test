@@ -1,7 +1,12 @@
-defaultStorageMapping: SERVICENOW
+defaultStorageMapping: CHANGE_REQUESTS_STORAGE
 installedPackages: {}
 jobs: {}
-locations: {}
+locations:
+  CHANGE_REQUESTS_STORAGE:
+    mappingDefinitions:
+      "7":
+        database: SERVICENOW_DEST_DB
+        schema: DEST_SCHEMA
 macros: {}
 packages: {}
 projects: {}
@@ -935,7 +940,7 @@ stepTypes:
     version: 1
   StepType-View:
     id: View
-    isDisabled: true
+    isDisabled: false
     metadata:
       defaultStorageLocation: null
       error: null

@@ -1,11 +1,11 @@
 steps:
-  SERVICE_OFFERING-34488e22-84f0-41d3-ad51-32b332def5d1:
+  SYS_USER_GROUP-8460bdee-60f0-48b7-ae8a-831fba030084:
     operation:
       database: ""
       dataset: ""
       deployEnabled: true
       description: ""
-      locationName: SERVICENOW
+      locationName: CHANGE_REQUESTS_STORAGE
       metadata:
         columns:
           - acceptedValues:
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: fd7ef258-57af-4aca-bf22-f43a26cace0b
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: 56a1702a-aead-45c9-b492-77693959152a
+              stepCounter: 8460bdee-60f0-48b7-ae8a-831fba030084
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: e1ba9251-b9a9-4e7d-98d1-df57509bcc04
+              stepCounter: 8460bdee-60f0-48b7-ae8a-831fba030084
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 5cdd029a-9d9b-4f2d-a5b8-65455c0a866f
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: 1217617a-d8c8-4c81-b742-09a242f18e90
+              stepCounter: 8460bdee-60f0-48b7-ae8a-831fba030084
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: cc5d2516-1c4d-4618-885b-ccb60a1270fe
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: ecf72019-ca51-4785-b6cb-8a97a97e7edf
+              stepCounter: 8460bdee-60f0-48b7-ae8a-831fba030084
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -69,10 +69,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SERVICENOW', 'SERVICE_OFFERING') }}
-      name: SERVICE_OFFERING
+          joinCondition: FROM {{ ref('CHANGE_REQUESTS_STORAGE', 'SYS_USER_GROUP') }}
+      name: SYS_USER_GROUP
       schema: ""
       sqlType: Source
-      table: SERVICE_OFFERING
+      table: SYS_USER_GROUP
       type: sourceInput
-    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+    stepCounter: 8460bdee-60f0-48b7-ae8a-831fba030084

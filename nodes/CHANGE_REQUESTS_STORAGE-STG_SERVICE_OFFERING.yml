@@ -1,5 +1,5 @@
 steps:
-  STG_SERVICE_OFFERING-2dc50713-77db-4c10-9243-aa1ce743cfd4:
+  STG_SERVICE_OFFERING-5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f:
     operation:
       config:
         insertStrategy: INSERT
@@ -11,14 +11,14 @@ steps:
       deployEnabled: true
       description: ""
       isMultisource: false
-      locationName: SERVICENOW
+      locationName: CHANGE_REQUESTS_STORAGE
       materializationType: table
       metadata:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 8620d54e-d286-4453-9400-ddac810455c7
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 7c10a54b-5131-424f-b290-85cbb32f2b34
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             dataType: VARCHAR(16777216)
             description: ""
             hashColumns: []
@@ -27,12 +27,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: fd7ef258-57af-4aca-bf22-f43a26cace0b
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: 73c172f4-cf1c-405e-8902-d24aa1a811a7
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: ""
           - columnReference:
-              columnCounter: 56d82f90-7984-41fe-a322-99c6c399f1b0
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: e97116bc-6797-4693-9776-9712819c8975
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             dataType: VARIANT
             description: ""
             hashColumns: []
@@ -41,12 +41,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: ""
           - columnReference:
-              columnCounter: 86a07811-4de2-48fe-8e9a-c030f8e73ba5
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 71235d3f-0135-40a2-bd86-e0e25911bd19
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             dataType: BOOLEAN
             description: ""
             hashColumns: []
@@ -55,12 +55,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5cdd029a-9d9b-4f2d-a5b8-65455c0a866f
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: 5c3e62bc-5429-436b-800b-e9560c40a006
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: ""
           - columnReference:
-              columnCounter: 9194d1d3-a8c3-478d-9e49-1a27a4be2341
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 66e1eea1-20c3-4b9f-b529-97b1ced3cece
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             dataType: TIMESTAMP_NTZ(9)
             description: ""
             hashColumns: []
@@ -69,16 +69,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: cc5d2516-1c4d-4618-885b-ccb60a1270fe
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b6b06b26-6bd4-40a0-accd-25035debd4b0
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ced82cc1-5fd1-474d-9437-755d2d311183
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: a3e91da6-712b-4178-a2dd-2711b2df915c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -86,16 +86,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"aliases\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: eb2f2d35-208d-4386-9c5a-7b75483579ab
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: a99f29b2-477d-4522-b622-fb6f764ef585
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -103,16 +103,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"asset\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 662290d9-c428-4f20-99e8-320fb7a97fe1
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 8db54bab-6b74-4eb0-abcb-9f76e939b5ba
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -120,16 +120,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"asset_tag\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f23c9949-4b0f-4247-a6da-84687532de1d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 7cb1f3b2-a425-4fcf-a6c5-9e77342be5f4
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -137,16 +137,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"assigned\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: c74ea2cd-abd3-4303-810f-2a2f4346311b
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6f261e30-54be-4fe9-b792-7ce701ddf234
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -154,16 +154,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"assigned_to\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 4bf44c53-ff5a-495a-89a4-70cd98b22eb8
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 96463943-7ee9-4973-a9d3-bcb5f3b51d2d
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -171,16 +171,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"assignment_group\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 78b6354f-c06f-44f2-94b5-5d74423d28db
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 3f7a9a73-1249-4765-8f96-8e3dc455670c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -188,16 +188,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"attestation_score\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0af60e25-318b-4054-8249-b3b6cf49562d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 991a6db0-e85d-481a-8df1-06682a98d6bf
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -205,16 +205,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"attestation_status\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 44aa6ef0-8d4f-4310-a3cb-69fbd788faa5
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: b92b2cdb-93b4-42df-baf7-fc242f17482f
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -222,16 +222,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"attested\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: e633ad90-75e9-499a-bd76-f2772c654d70
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 31dac3a7-d6e4-421a-a62b-bca56bbbd41a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -239,16 +239,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"attested_by\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d47fead7-ce27-4809-97f4-85505667398a
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: d2cf1389-0c07-425f-8cce-72f764e14daa
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -256,16 +256,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"attested_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 3ff143f9-0e67-4f01-82ca-6bbdbb8d28be
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: cf09e53a-5579-45ae-b215-965dcd6933a7
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -273,16 +273,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"attributes\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 9de3a653-16d1-4ab7-8274-f67822f11027
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 62734de2-8f9c-43d9-9bd7-808b5e2aae27
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -290,16 +290,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"billing\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 45a0f7cd-4a9f-4ca9-9ea4-98af90d0cf66
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 99b640b9-6620-43fb-9a41-ff5e6abd78d9
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -307,16 +307,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"business_contact\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6cb060c8-4faa-4924-9554-54f83c5f20b5
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 7165af3e-53b9-4b5b-b5f5-e766cb5ca156
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -324,16 +324,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"business_need\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d1960186-d9e7-408a-9bba-17ce9da1f349
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 57551695-599d-4938-bfb0-0deec5cb9672
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -341,16 +341,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"business_relation_manager\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 58860a45-0915-4a8d-98b7-8d7a37d0a503
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 85f6bb9d-702e-41e8-ab90-6ec5862bb9dd
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -358,16 +358,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"business_unit\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: feb60a7e-5e05-4775-ab2d-66a64ca2ab86
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 3cff06d2-8c8c-430f-a7b5-2da5757eec86
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -375,16 +375,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"busines_criticality\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 793666d1-26ab-4171-9c63-0d1c8cddd7be
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 36594e9d-6d3a-435b-906e-2febabbdda0b
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -392,16 +392,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"can_print\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 47cb4d99-b39c-4615-9c83-c3a616183ece
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 5d89dfc6-3862-4082-a940-e466999104f6
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -409,16 +409,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"category\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 1c4a6bac-603d-4403-b9bb-cb5e9d3feb50
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6dd1eb70-b3ca-4491-9d66-a850e582b34f
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -426,16 +426,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"change_control\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f2f33383-6234-4565-8f38-ee0830521889
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 4b655f60-eaaf-4a7e-8f42-2ba2063e7df5
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -443,16 +443,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"checked_in\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: a811a736-4a4a-45b5-8445-0c2a9801a526
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ff743282-7909-4176-9daa-547c6af22d70
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -460,16 +460,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"checked_out\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 95cf9d26-67bd-454b-8f3c-9e296d244d09
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 30ca596d-bea1-47d0-ad48-bb040f477365
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -477,16 +477,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"checkout\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8c59bdc0-d318-45de-aa1e-7e601b46451a
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 019c087d-5e21-4ddd-a1fb-15f2810ed25a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -494,16 +494,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"comments\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b4670f61-08d2-4941-9fc4-0ea0033497f8
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: fe8108fe-cccb-4d50-8532-095a4e76fc58
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -511,16 +511,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"company\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 02d2531d-1100-4595-8cfa-02c347b389ea
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2519d3f7-87be-49c8-a750-f640015c33fb
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -528,16 +528,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"compatibility_dependencies\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 9c6a6cbc-911c-4da9-8e2d-c3f40b77c58a
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 9fdd090a-9486-4186-a3a8-d3ff92fa7e92
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -545,16 +545,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"consumer_type\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 5958ce9f-cbaa-41ce-a585-8fb7e381678d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2e24fe1d-cd0b-4636-97d1-1b1be60f83d0
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -562,16 +562,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"contract\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b8519086-b97d-4f3c-a07a-18c1189d4deb
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 941b97c0-5c3d-4a05-899d-d31c7bb63171
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -579,16 +579,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"correlation_id\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: dfd77156-6a08-4b2f-8973-dcd2ae06fd1b
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: dbc1fe86-9bfb-4ad5-a9f1-09264082b2b1
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -596,16 +596,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"cost\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 473b763e-ba53-4922-9c22-a360c03f7666
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 5839eab4-28a8-4489-9abc-e5a80dd4ea7a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -613,16 +613,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"cost_cc\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 27ae52e2-9b52-469f-82ea-44e469e294d9
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 30215b12-35a4-4ef5-8b1d-d177dcb2224c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -630,16 +630,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"cost_center\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 3c440889-37d6-4be4-b00d-8295dbe7399e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 8c468630-2f5f-479b-a9d1-2920d1a1d6c1
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -647,16 +647,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"delivery_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 698db2bd-38fd-494b-93b8-4000c018ebcd
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 208ec8c5-c9b7-4c59-9004-ce15d1f9e436
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -664,16 +664,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"delivery_manager\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 36b66054-e46e-45a2-a853-dbcbf00e9622
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 8b9e95db-530b-4b7f-abee-4a5ef989743e
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -681,16 +681,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"department\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b3ca1d7b-a21a-4282-9a59-e13f0f939e8b
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 06bbba7e-7f45-4fe4-bc09-3b1a140c44a0
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -698,16 +698,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"description\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6b232310-63c0-4a5a-84e8-a2c131670adb
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ca9f2b2c-770b-45fc-8338-bee8a5c5fdc5
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -715,16 +715,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"discovery_source\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8e9bc19d-0ff7-4cd3-a6e0-23aa11ad0e0e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: a7281e42-ca0e-4e39-bc55-b3cc5174867c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -732,16 +732,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"dns_domain\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8727840c-178e-4793-8c8a-d5041a0ee044
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2bf099d2-be1b-4650-b047-b6d4d16d83cc
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -749,16 +749,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"due\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7be53d1b-fa70-448b-b91a-c7f3f73d0936
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 1c6b6d7f-e1e3-43e9-a600-cda3d932795b
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -766,16 +766,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"due_in\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ac90bc6b-43db-4f09-9c10-a34ea7fb72eb
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 48164e63-e018-47b5-a160-bf78877c7942
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -783,16 +783,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"duplicate_of\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 36430a2b-61cb-4988-9f86-fdb5ed695cca
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 0857a73a-d51a-4bde-8591-714bb6acfb3d
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -800,16 +800,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"end_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: a0014766-6e89-43a0-a527-40c9aa1288fb
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 5a81675c-77c2-4122-8e25-05812ca4f6b9
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -817,16 +817,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"environment\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 2f514692-7bce-4413-93dc-85e2fe7f32e7
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 5a2d4282-5aa5-4f27-99f0-9d64f6a22fd3
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -834,16 +834,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"fault_count\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 5c744ff6-aed0-473e-aeb5-186c5d668467
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: e4cf593c-6726-4f11-8cf8-8dee194dc92d
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -851,16 +851,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"first_discovered\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d6a20281-b186-4e5b-a7d9-48196609ee29
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 680272ac-490d-49d0-a5f6-8b483133edf9
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -868,16 +868,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"fqdn\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 10144a40-2c02-4be1-8dc5-4600f85bf0ef
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 63aabed5-014f-471e-8c41-c964549bf5dc
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -885,16 +885,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"gl_account\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8aa52c12-1439-4dba-bec0-64a743254445
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: c71f9c07-0168-454b-8b98-975adb3c094f
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -902,16 +902,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"install_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6c74d0d5-d277-491f-9139-2a1665d70193
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 7ad9cb73-9097-4eb3-9753-8f223592825b
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -919,16 +919,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"install_status\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b2889b2a-487c-4e70-a568-90c44d6ad56e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: d88c3a0a-0190-48a8-a394-296f82a2a6c4
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -936,16 +936,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"invoice_number\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 826a9690-c94d-4b1b-8dbf-cc43e11ebf1b
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: bb170a91-fb20-433b-9722-dfe2d689f326
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -953,16 +953,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"ip_address\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 433af7eb-db99-4f57-830a-4006f18fd1dd
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 13f948d0-525b-4ec1-a87d-1e986eb75ada
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -970,16 +970,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"justification\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: e1097901-2d9a-437d-8d7d-ae1007d897b8
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 4e86dcfa-050c-4a59-8117-010a7e287cb1
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -987,16 +987,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"last_discovered\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 1ba67ab4-aab3-46e4-b4ea-f5987c30e466
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 3a11ba3f-9368-4f2e-bc18-43b32cf2c55a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1004,16 +1004,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"last_review_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 963a05cc-00c5-489b-933a-08a6fab4f2cd
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: b6007083-decc-499d-9055-1783f9109f0a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1021,16 +1021,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"lease_id\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ce4765aa-7670-444e-ae56-db6e8ec5a1fa
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 83cb2107-79c6-4493-80d8-c505d3b4179d
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1038,16 +1038,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"life_cycle_stage\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6d307bd4-276c-47d7-aa67-94ecee05048e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: d2b67e73-c644-49dc-8bbb-31619308925c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1055,16 +1055,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"life_cycle_stage_status\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d02b0827-3116-48b0-afc4-25ea4c29fd65
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 693e2699-847d-41fa-b3e3-787df4f3f735
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1072,16 +1072,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"location\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 969fd652-2f23-4057-9f21-cfc53d4f2185
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: b5b619db-3e6f-4a56-9c6e-ec9427b54b5c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1089,16 +1089,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"mac_address\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 9eaac022-3e1b-4e19-b88e-877c6963d76d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6d41e0be-5116-4469-8121-4862d92d8470
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1106,16 +1106,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"maintenance_schedule\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: abd0f07e-81f1-49a9-861c-50e17b711892
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6818c526-4fa3-4fa4-9fd9-5f9591f1d178
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1123,16 +1123,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"managed_by\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 59dfc447-1cc3-49aa-abef-0eac20c89f3f
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: c4a1ccf2-832a-42e1-bf1a-1a1f525ead96
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1140,16 +1140,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"managed_by_group\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 71e488d6-ee04-49b3-b1ed-064a237c27d1
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 0f6fac54-1607-4c28-8110-8c60ce249f9b
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1157,16 +1157,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"manufacturer\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ec38d82e-68ba-4166-9a0f-531ebd0aede5
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 72ed6ffe-cbcf-4f93-b289-83f8488d58be
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1174,16 +1174,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"model_id\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 4036df74-810a-4936-8eb5-c0c28e49c904
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 50bf0366-6004-4d12-b3f5-2b9b5ff74105
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1191,16 +1191,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"model_number\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 4f56513f-8f60-48bf-bf49-fb0ce22994c7
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ff4bcc9b-8f21-4f25-b5fa-50055490ea87
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1208,16 +1208,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"monitor\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 034a49bf-ac56-4f51-b138-75d285e39004
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: d93dd07f-f970-4cf6-a323-d389e0fc6c2a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1225,33 +1225,33 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"monitoring_requirements\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 72cb572f-2697-47ad-ab0c-9e4893518327
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 96de03e7-de7c-42ad-a1ed-7fb19964e9d8
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
-            name: service_name
+            name: name
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"name\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: fd7b711c-c648-4855-b7fc-361f7f32cc58
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 00cf2fa0-3cab-4838-acc5-27b398b1edbb
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1259,16 +1259,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"number\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 139fedf3-04d2-4820-be21-f964ef228145
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: e0db0630-d4a3-43fc-a7d6-a731ea32ebf9
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1276,16 +1276,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"operational_status\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0db79797-d235-4584-97a4-abc53e576004
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: e0a071f8-5844-4388-bf97-907a610670c0
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1293,16 +1293,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"order\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f1dad7cc-5cdb-4340-a76c-5dddf82a0a94
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6f6dc9a9-e8ab-4674-92b7-fb5f87ebb74e
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1310,16 +1310,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"order_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b80847db-0f2b-412a-ae10-32a9da8e277e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2b28fbc4-4ed8-4883-b7aa-f0440124437f
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1327,16 +1327,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"owned_by\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 68e01f71-52cc-4926-b237-f9a7ecdb079d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2cf81001-956b-48af-9ae9-d2e35544725d
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1344,16 +1344,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"parent\".\"link\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 1c731ad9-4be7-47b0-b84c-47f44797212d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 21a352d8-d16f-4e44-8792-fcf1b070209c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1361,16 +1361,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"parent\".\"value\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 21286ac9-e2e8-4912-9a95-e2909e22e726
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 52f25d7e-0c7a-47f0-b73f-ebeebdcc3a40
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1378,16 +1378,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"portfolio_status\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: a69854fe-f7cc-4d2e-8143-79345a4ded8a
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 43bb72a8-59ec-4479-813b-a80fd13656ff
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1395,16 +1395,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"po_number\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: a78706bf-a9a3-4a53-ba78-73ba2389691a
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: abcaac58-a51f-42ac-9e84-3b7030c5c492
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1412,16 +1412,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"prerequisites\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7e9ec4ff-2df0-42e8-beba-75af6a690d1d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 51c5c5f6-3ec2-48c4-b476-cf37dd9fea88
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1429,16 +1429,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"price\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 032d3696-6323-4c51-a51a-638184b8ad29
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 36f31dc6-aa10-44d3-9577-9a05d3930dd2
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1446,16 +1446,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"price_model\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 58c1bac5-b7db-4dce-9dea-0d053e620eff
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 25749afa-6ca0-41a2-84cc-22751db6a04a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1463,16 +1463,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"price_unit\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 4277579d-c06e-4ec0-9e7e-9777db895355
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ad5cef56-fe24-40a2-8a51-50d2cd0133eb
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1480,16 +1480,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"published_ref\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 58725d56-c9d8-44c7-8298-a85a673bfee2
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 0db9c4a2-aea1-4be7-af09-8310324d5fe8
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1497,16 +1497,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"purchase_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 654c6c43-cf5d-4b1f-8e7a-98925b11cbea
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6cac0990-316c-4b22-af16-0dd80d3cd5bd
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1514,16 +1514,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"schedule\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 37076165-8f9c-431c-b973-9ef5275ad2d5
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: b6c7298a-40a3-4ffa-b9a5-befe62d4c88b
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1531,16 +1531,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"serial_number\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f742ce3e-af89-461f-bf74-4a74e57ce6a9
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 3051a639-b6e0-4252-a0e0-79462b18e861
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1548,16 +1548,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"service_classification\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 009f5ac1-c4ba-4f3f-94fe-11f341c157db
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: a9bd3d6a-ec3b-4afa-8993-2a7f7605b656
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1565,16 +1565,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"service_level_requirement\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: c455dfc4-dc6f-414e-a791-e9a19fba1bbd
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2bc34abe-6b11-44fc-b892-7fd63ecd8cd1
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1582,16 +1582,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"service_owner_delegate\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 5538c7c0-90ed-4b8f-a1ff-611daa7f7431
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 2967c9a7-535e-4fe6-9f99-3a00ebdf3423
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1599,16 +1599,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"service_status\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 4b03d7f7-2822-4546-8ba9-1c8a71333e4b
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: a9e4d8c0-5faf-482c-ac26-8acf5c97d469
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1616,16 +1616,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"short_description\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0dac0ba7-ac8c-4dea-b9f7-75e4cb6594f1
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 24bef1da-2c58-4ca1-bc2b-c50f17e65be8
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1633,16 +1633,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"skip_sync\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 820f4a8b-eada-4630-b31a-993285c2f520
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 65c56e61-f4d8-49ae-8aa7-920638acb1c1
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1650,16 +1650,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sla\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: c2db393c-d4a5-46d5-af70-76bddf6a30ad
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ad24ea62-49f4-41e1-82af-f6910841bbe6
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1667,16 +1667,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"spm_service_portfolio\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 767b62e0-79da-48ee-980f-64e8f4f58edd
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 8e11082a-761f-4dd0-bd21-f20480ab7752
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1684,16 +1684,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"spm_taxonomy_node\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 99a77d84-7989-437d-ab79-553face0d289
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: acb3a865-fea3-4dc8-b5e9-5e976458415e
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1701,16 +1701,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"stakeholders\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 2b5b6f62-8961-4dc3-994d-c0abf517cab4
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: dfe8ba88-9b7d-4af8-8bb9-f4eb83c7055c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1718,16 +1718,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"start_date\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d0028cc7-cf16-4bb8-80b9-4db76d341bb5
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6f90267f-9e52-45d5-8fb7-0aadd2c6b1a1
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1735,16 +1735,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"state\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 9e1460cf-a78d-49a5-9c73-fe452931b603
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 8076200c-f3e7-49d8-9d43-d2ac4348a3b7
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1752,16 +1752,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"subcategory\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 07958a6e-f6c6-4e86-a7d4-e5cfdf30b5e9
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 04a9d738-c9f1-4ae3-9ec7-8b06938ce02c
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1769,50 +1769,33 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"supported_by\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d88b3a26-0608-4e14-93eb-134ff306d99d
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: c54d62d3-2227-4190-ae33-26ab3b29e390
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
-            name: support_group_link
+            name: support_group
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
-                transform: "\"SERVICE_OFFERING\".\"RAW\":\"support_group\".\"link\"::STRING"
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
+                transform: "\"SERVICE_OFFERING\".\"RAW\":\"support_group\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f91e7055-a8f5-4594-abf4-6c1a08459083
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
-            config: {}
-            dataType: STRING
-            description: ""
-            name: support_group_value
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
-                transform: "\"SERVICE_OFFERING\".\"RAW\":\"support_group\".\"value\"::STRING"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 5b3013a5-b5a8-43e2-81d3-8bfc648366bc
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: bfe61138-011c-4025-9a65-998ddd2f4370
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1820,16 +1803,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_class_name\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 80dbb012-c79e-406f-8dd7-c74dd2f298cd
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: f627f196-640f-4424-81d1-d8c80abd6bf2
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1837,16 +1820,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_class_path\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 3aaf4af9-e373-44a8-9b44-19f53764a0e1
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 55817331-1a8e-42eb-87d0-51ef270d346a
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1854,16 +1837,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_created_by\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: af548ef7-9123-456e-af8e-6dd863d3252e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 10be23d8-c9ca-4b15-8364-ffea38edaf8b
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1871,16 +1854,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_created_on\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 70d1acbb-1e1a-4202-a2e3-283263e13ee3
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 79ff0ce5-2f50-45c0-98a2-af2ba404ac35
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1888,16 +1871,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_domain\".\"link\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: a6c9d5c4-0533-4be5-b8aa-f36a498b61fe
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 10e825ec-1bb9-40e5-bd8a-86bc4db3fb67
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1905,16 +1888,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_domain_path\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0ec01cd2-55a2-48df-bd84-84d8c050fa79
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 3037ca82-164d-4803-9ef3-2b9f58444b11
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1922,16 +1905,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_domain\".\"value\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 892c8607-4b2a-491b-b44f-d4c83e2fc3a7
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: b11187e1-da33-40e9-a94a-9ea35bc2c7c5
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1939,16 +1922,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_id\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b5fe0d6c-70a9-4e57-a335-7bae221aa1f1
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 9151480a-1e9c-4090-8621-178287c67fc2
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1956,16 +1939,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_mod_count\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 41c0f542-56ab-484e-a2ca-edee252a5687
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 41e4cf48-c743-4a2d-a2ac-cb1d2ab1d53f
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1973,16 +1956,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_tags\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: efb58a96-2095-4d9d-a08e-037d21bc9189
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 45512f76-21f4-4700-a386-2f769e58d001
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -1990,16 +1973,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_updated_by\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: c033ab07-fe39-47c8-aa53-1cdcd6b6d44e
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: bb8e5012-85d9-44ca-83f0-15e75baf9dea
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2007,16 +1990,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"sys_updated_on\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: cc3e46f3-54eb-4818-8139-9153399619bc
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 34f6b944-c880-4fbb-a0f2-b773e2bce1a5
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2024,16 +2007,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"technical_contact\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 1cbb9486-940c-45cd-990b-95f4fa119eb8
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 16f40419-54a1-49a0-ab75-ae8925905ab4
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2041,16 +2024,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"unit_description\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b36599ac-9057-4c43-8d36-9759032a2d21
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 6958849d-bba7-435a-bc01-284a24b33ab2
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2058,16 +2041,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"unverified\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 3c679b06-5d40-4701-97a5-ada4c2f2f3c9
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: a841a060-0a06-41b2-aaef-fcd499150e60
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2075,16 +2058,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"used_for\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: cd456e67-af02-4431-a576-b2cdc464aaf1
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 505a2609-4ad7-4e63-a167-502913caef97
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2092,16 +2075,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"user_group\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: dd82d9e7-700a-4403-b543-e9f3c929cf16
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: d1e9ae8f-f98c-47a4-9d8b-a7ff9775f83f
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2109,16 +2092,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"u_default_effort_size\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7fd9c90b-ee65-4517-8af0-1ae629750ef7
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: 7151e9b0-07da-41ef-a5f6-f5b9fda71343
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2126,16 +2109,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"vendor\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 248d810d-a4ae-4a67-8cb4-9bb4afca39cb
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ea3b2b82-f8f9-4c0d-a0b5-6417e38fcf36
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2143,16 +2126,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"version\"::STRING"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 3f0a6026-5c2c-4884-8c9a-f11ca4764a1a
-              stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+              columnCounter: ff2ebf3f-5909-4b0b-96e0-af068b8ec959
+              stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
             config: {}
             dataType: STRING
             description: ""
@@ -2160,8 +2143,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-                    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+                  - columnCounter: b4399c8f-116a-46b8-b3fd-5f4af4ad94b1
+                    stepCounter: 9c8edcf7-2c2a-4355-9fac-d1bbdf4ed59d
                 transform: "\"SERVICE_OFFERING\".\"RAW\":\"warranty_expiration\"::STRING"
         cteString: ""
         enabledColumnTestIDs: []
@@ -2170,10 +2153,10 @@ steps:
             customSQL:
               customSQL: ""
             dependencies:
-              - locationName: SERVICENOW
+              - locationName: CHANGE_REQUESTS_STORAGE
                 nodeName: SERVICE_OFFERING
             join:
-              joinCondition: FROM {{ ref('SERVICENOW', 'SERVICE_OFFERING') }} "SERVICE_OFFERING"
+              joinCondition: FROM {{ ref('CHANGE_REQUESTS_STORAGE', 'SERVICE_OFFERING') }} "SERVICE_OFFERING"
             name: STG_SERVICE_OFFERING
             noLinkRefs: []
       name: STG_SERVICE_OFFERING
@@ -2181,4 +2164,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 2dc50713-77db-4c10-9243-aa1ce743cfd4
+    stepCounter: 5c5ce5e5-b09f-404f-a6f8-8ace4c9c145f
