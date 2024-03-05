@@ -1,0 +1,756 @@
+steps:
+  STG_TIME_CARD-12cb4099-4294-4899-9618-0e8552e3c006:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SERVICENOW
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: e640ff24-b14b-4e9c-920f-59b37024bcb3
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 30e9361c-40c0-4b79-8e07-384795b9249f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: ""
+          - columnReference:
+              columnCounter: c11d56ab-771b-42cc-b8a5-31ce3c1063ba
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RAW
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: ""
+          - columnReference:
+              columnCounter: c3fd45b3-c608-4e75-afa9-08998b1e7471
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 74d7f080-0361-4d84-b918-fb02689f2425
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: ""
+          - columnReference:
+              columnCounter: 1db53b9a-9b65-4d1d-8237-c5b72c87506f
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 19c9240c-e068-4a1d-839c-903f81517406
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 211a2126-04bd-456a-9087-72311e4581ca
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: approved_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"approved_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6834f185-d718-41b7-b44d-bb72ec3aa55c
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: approved_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"approved_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 32012ccb-b851-411f-8b68-14e073d1d136
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: approver_list
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"approver_list\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f5ef5f51-efaf-47fc-ac88-5a47b7ba4d58
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: category
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"category\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5fd6d0fb-4cc4-4e6a-9b23-edded9ca659d
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: comments
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"comments\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0953bced-ef02-45bd-ad2d-b719537b7ada
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: friday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"friday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1e45911e-6355-43c7-aaf1-d0dd4f55a945
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: labor_task
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"labor_task\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 672a8b1a-910f-495a-a307-3fcc6416c9da
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: monday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"monday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ee485b1c-af15-491b-9511-27cfb626c0b2
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: notes
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"notes\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c316ac38-e300-4b4d-9d28-14e35dc99419
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: project_time_category_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"project_time_category\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 602def6f-a2bc-4fdd-9167-8283f3ff143b
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: project_time_category_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"project_time_category\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 618774e3-9c4e-4cc7-9c9f-077c75256bbe
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: rate_type
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"rate_type\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 53355b3b-1d67-44ae-b34f-486bcc503e47
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: remaining_effort
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"remaining_effort\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 670a844b-bbd8-407d-8ebf-731a2e063fdb
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: resource_plan
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"resource_plan\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0cf91c3f-69d7-4481-9ac8-01134228009e
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: saturday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"saturday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e0a6a4d2-34f1-45b8-88a0-6ab75e86efb5
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: state
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"state\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7be8a436-6a77-40a1-b0a1-73c527a1c143
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: sunday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"sunday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 36f5bbd0-c922-4200-9102-e4abbb213b1c
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_created_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_created_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 76b50df8-2742-455a-b178-db723f544503
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_created_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_created_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 62a283c7-e9ba-4fde-b336-1c1e4d8dbcbd
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_domain_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_domain\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5df60c48-0743-42aa-abfc-e5b18b6971b4
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_domain_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_domain\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5727d12a-636a-46cd-8e9d-9624cc2c806c
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_id\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1bb4c1cd-8400-4d41-b10f-77a3b5227429
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_mod_count
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_mod_count\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9f63245c-f17d-4928-bc43-5c397dedc838
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_tags
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_tags\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f1f40e00-fb5c-458e-af57-7b4329d7cd52
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_updated_by
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_updated_by\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7d738cdd-9eab-42b8-b26f-ae7ca33d0d47
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: sys_updated_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"sys_updated_on\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a94732b1-9df8-4f23-a773-edfa0e64541c
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: task_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"task\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 12161733-3eeb-47df-8606-e22218216e41
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: task_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"task\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f20170ae-9373-43ca-b0a7-519a03756f91
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: thursday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"thursday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e4c54ad9-7731-4610-8ce8-a600f02eef83
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: time_sheet_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"time_sheet\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e801e099-0ef3-43d4-a483-8d1024df01a0
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: time_sheet_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"time_sheet\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 11de6f69-1248-42cb-99c2-8127498c4bb7
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: top_task_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"top_task\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5548eb46-2118-440d-9b6f-aff2e7a22842
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: top_task_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"top_task\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2452137f-ff8c-44ce-8af7-02135f93c1a0
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: total
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"total"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 522f57cd-a4e5-4187-a3b3-a720642bc166
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: tuesday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"tuesday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 78da75af-6392-486d-b1b8-8f986610528a
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: user_link
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"user\".\"link\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2ac12aff-b4f4-4be1-aa79-dfb1615b9c50
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: user_value
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"user\".\"value\"::STRING"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 37d39127-3162-442a-8974-3e48e38df7b1
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: NUMBER(38,6)
+            description: ""
+            name: wednesday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: TRY_TO_NUMBER("TIME_CARD"."RAW":"wednesday"::STRING)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ae3c6976-e6b7-4b5e-8354-f02c27a52a68
+              stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006
+            config: {}
+            dataType: STRING
+            description: ""
+            name: week_starts_on
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+                    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
+                transform: "\"TIME_CARD\".\"RAW\":\"week_starts_on\"::STRING"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SERVICENOW
+                nodeName: TIME_CARD
+            join:
+              joinCondition: FROM {{ ref('SERVICENOW', 'TIME_CARD') }} "TIME_CARD"
+            name: STG_TIME_CARD
+            noLinkRefs: []
+      name: STG_TIME_CARD
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 12cb4099-4294-4899-9618-0e8552e3c006

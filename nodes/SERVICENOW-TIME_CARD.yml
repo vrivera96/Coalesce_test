@@ -1,5 +1,5 @@
 steps:
-  SERVICE_OFFERING-34488e22-84f0-41d3-ad51-32b332def5d1:
+  TIME_CARD-25c9ce78-4ed6-46a3-b42c-72cde382edb9:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: fd7ef258-57af-4aca-bf22-f43a26cace0b
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: 30e9361c-40c0-4b79-8e07-384795b9249f
+              stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b259017e-cdaa-44df-82eb-5d210fe74f41
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: 9c40bb9b-bc3d-4a8c-996c-be45321b047f
+              stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 5cdd029a-9d9b-4f2d-a5b8-65455c0a866f
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: 74d7f080-0361-4d84-b918-fb02689f2425
+              stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: cc5d2516-1c4d-4618-885b-ccb60a1270fe
-              stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+              columnCounter: 19c9240c-e068-4a1d-839c-903f81517406
+              stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -69,10 +69,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SERVICENOW', 'SERVICE_OFFERING') }}
-      name: SERVICE_OFFERING
+          joinCondition: FROM {{ ref('SERVICENOW', 'TIME_CARD') }}
+      name: TIME_CARD
       schema: ""
       sqlType: Source
-      table: SERVICE_OFFERING
+      table: TIME_CARD
       type: sourceInput
-    stepCounter: 34488e22-84f0-41d3-ad51-32b332def5d1
+    stepCounter: 25c9ce78-4ed6-46a3-b42c-72cde382edb9

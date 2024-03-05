@@ -1,5 +1,5 @@
 steps:
-  SYS_USER-84f733da-469d-4e7f-aeeb-cd386d229005:
+  SYS_USER-5fb8a725-5a25-4c91-b92c-c8095a922b6e:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 55b42520-4902-4e9f-8e53-8c7d93a90f46
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: 691ff2ff-85fa-4be7-ae75-98e728946e0e
+              stepCounter: 5fb8a725-5a25-4c91-b92c-c8095a922b6e
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b77deea1-da35-42ec-bdac-4d744e17e410
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: 15a3b044-5d98-43bd-8c49-f3bda7444c2a
+              stepCounter: 5fb8a725-5a25-4c91-b92c-c8095a922b6e
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 087ac712-af39-471c-a610-3cf5a5e3f770
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: 152c798c-7236-40ef-96e5-139b89e6e40e
+              stepCounter: 5fb8a725-5a25-4c91-b92c-c8095a922b6e
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 339b2608-112e-474a-bba1-8ab6b2178986
-              stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+              columnCounter: 3d71c964-d958-416a-8ef8-b0b4d32d63d8
+              stepCounter: 5fb8a725-5a25-4c91-b92c-c8095a922b6e
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -75,4 +75,4 @@ steps:
       sqlType: Source
       table: SYS_USER
       type: sourceInput
-    stepCounter: 84f733da-469d-4e7f-aeeb-cd386d229005
+    stepCounter: 5fb8a725-5a25-4c91-b92c-c8095a922b6e

@@ -1,0 +1,86 @@
+steps:
+  STG_CMN_DEPARTMENT_BUSINESS_UNIT-8270a849-5c74-4246-b2d1-d0cd4e6de1cf:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SERVICENOW
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: ec4f973c-eb9c-4437-a7ad-8edd5fc70210
+              stepCounter: 8270a849-5c74-4246-b2d1-d0cd4e6de1cf
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: sys_id
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 482aaca5-6289-4548-bbd7-48b80c82fb97
+                    stepCounter: 9f1b1388-d255-4ba4-82c5-7c083e759227
+                transform: ""
+          - columnReference:
+              columnCounter: 94cdf97d-24e6-45bf-bffb-bb3e910fad80
+              stepCounter: 8270a849-5c74-4246-b2d1-d0cd4e6de1cf
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c3f5fe76-9034-41ff-a500-2412fafa9943
+                    stepCounter: 9f1b1388-d255-4ba4-82c5-7c083e759227
+                transform: ""
+          - columnReference:
+              columnCounter: 5a84fe0c-7a5e-484f-9960-f7dfa761dfa6
+              stepCounter: 8270a849-5c74-4246-b2d1-d0cd4e6de1cf
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: agency_name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1ffe900c-2d76-41b3-8465-c36d87492304
+                    stepCounter: a862064c-d210-4ef8-9054-7fa878eea3e1
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_BUSINESS_UNIT: a862064c-d210-4ef8-9054-7fa878eea3e1
+              STG_CMN_DEPARTMENT: 9f1b1388-d255-4ba4-82c5-7c083e759227
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SERVICENOW
+                nodeName: STG_BUSINESS_UNIT
+              - locationName: SERVICENOW
+                nodeName: STG_CMN_DEPARTMENT
+            join:
+              joinCondition: |-
+                FROM {{ ref('SERVICENOW', 'STG_CMN_DEPARTMENT') }} "STG_CMN_DEPARTMENT"
+                LEFT OUTER JOIN {{ ref('SERVICENOW', 'STG_BUSINESS_UNIT') }} "STG_BUSINESS_UNIT"
+                ON "STG_CMN_DEPARTMENT"."business_unit_value" = "STG_BUSINESS_UNIT"."sys_id"
+            name: STG_CMN_DEPARTMENT_BUSINESS_UNIT
+            noLinkRefs: []
+      name: STG_CMN_DEPARTMENT_BUSINESS_UNIT
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 8270a849-5c74-4246-b2d1-d0cd4e6de1cf

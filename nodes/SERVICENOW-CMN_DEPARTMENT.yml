@@ -1,5 +1,5 @@
 steps:
-  CMN_DEPARTMENT-6057d732-eb9a-4af4-819c-401df1698dd3:
+  CMN_DEPARTMENT-c9888ee0-7ac1-44cb-8a1c-d01d0d01b934:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 41ff8d47-fbd9-40fa-8826-b9425b22c9d0
-              stepCounter: 6057d732-eb9a-4af4-819c-401df1698dd3
+              columnCounter: a07ddaaf-2a33-4824-8e10-84bb5493afea
+              stepCounter: c9888ee0-7ac1-44cb-8a1c-d01d0d01b934
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 9eb8b995-c85f-46dc-b9f1-02f77a9df29e
-              stepCounter: 6057d732-eb9a-4af4-819c-401df1698dd3
+              columnCounter: cdecdcb4-a2e8-48ed-a1e1-9d3a9f74f41a
+              stepCounter: c9888ee0-7ac1-44cb-8a1c-d01d0d01b934
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 170eb1fa-5151-411a-b901-a3e35cd5b35d
-              stepCounter: 6057d732-eb9a-4af4-819c-401df1698dd3
+              columnCounter: 18ffc39b-d297-4fb4-b229-80b59b6b70c1
+              stepCounter: c9888ee0-7ac1-44cb-8a1c-d01d0d01b934
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 482c0bb8-48f8-43ac-b707-007de51ed250
-              stepCounter: 6057d732-eb9a-4af4-819c-401df1698dd3
+              columnCounter: 58fa0fb9-36b1-4bf6-bb62-6ca3c9b34852
+              stepCounter: c9888ee0-7ac1-44cb-8a1c-d01d0d01b934
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -75,4 +75,4 @@ steps:
       sqlType: Source
       table: CMN_DEPARTMENT
       type: sourceInput
-    stepCounter: 6057d732-eb9a-4af4-819c-401df1698dd3
+    stepCounter: c9888ee0-7ac1-44cb-8a1c-d01d0d01b934

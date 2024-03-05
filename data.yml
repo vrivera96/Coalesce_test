@@ -1,7 +1,12 @@
 defaultStorageMapping: SERVICENOW
 installedPackages: {}
 jobs: {}
-locations: {}
+locations:
+  SERVICENOW:
+    mappingDefinitions:
+      "7":
+        database: SERVICENOW_DEST_DB
+        schema: DEST_SCHEMA
 macros: {}
 packages: {}
 projects: {}

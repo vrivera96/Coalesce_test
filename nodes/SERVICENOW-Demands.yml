@@ -1,0 +1,513 @@
+steps:
+  Demands-cf59149e-59df-4512-b86b-677a4ea118e5:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SERVICENOW
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6797faa0-14a0-4ac8-8fa3-a3fddffdd493
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The name of the demand
+            name: short_description
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cd74e143-8d5b-4d80-84e4-58b5b9f8cb99
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: boolean field to denote whether demand is active or not in ServiceNow
+            name: active
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9fd4830c-65fc-4561-9916-be307f102681
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The demand type
+            name: type
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e83e4ffa-f28f-4a85-bf6a-fb06c92e535b
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The current state of the demand
+            name: state
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b2d1c777-6791-4787-bf88-1a72e1e7dace
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The full description of the demand
+            name: description
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6fc0c2e4-df41-49bb-95e1-90a2a46e2117
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The demand number
+            name: number
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 04aee13c-a580-4481-90fa-d678990f24c7
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The demand Start date
+            name: start_date
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f2174fc8-f8b1-4d3e-932c-ec64c6a437cf
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The demand due date
+            name: due_date
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3e0e3cd7-9890-4c05-9848-046a82e34474
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The current approved for sprint status
+            name: u_approved_for_sprint
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4cd5f28d-94ef-441e-9183-df5fbdffaf81
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The date the approved for sprint status was changed
+            name: u_sprint_state_changed_date
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0474b689-5c31-4347-818d-fbcc0468f1a7
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The date the demand was submitted
+            name: submitted_date
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 79f1d214-5364-4ccf-a0d3-bfafedc9f103
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The effort size for the demand in hours
+            name: u_effort_size
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a9e41b16-303a-473a-ac5b-95ce4e2b459c
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The ID of the portfolio to which the demand belongs
+            name: portfolio_value
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3be8e7be-01f4-492e-bcfc-662315aacb33
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The primary program to which the demand belongs
+            name: primary_program
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d5096615-997a-465c-b6c2-46714aee395a
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The demand manager
+            name: demand_manager
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7851421e-93e9-4720-a999-5e91e0ab001c
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The priority state of the demand
+            name: priority
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 034190b0-b7b4-4e1b-9784-7e74c57f9ebc
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The group to which the demand is assigned to
+            name: assignment_group_name
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 325b803d-30c2-4a28-ac27-8b22382a9aaa
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The person to which the demand is assigned to
+            name: assigned_to_name
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ce137831-db74-42d7-afe0-3a2891e8e604
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: Other collaborators of the demand
+            name: collaborators
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 132aecfd-21a4-4b00-9cd3-1adba41aaf40
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The person why opened the demand
+            name: opened_by_value
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 01fee127-2cfe-4083-9e25-0ee96abb9cae
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The department which opened the demand
+            name: requesting_department
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 27c04087-a841-4a71-98c0-5ba0ed621004
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The Agency which opened the demand
+            name: agency
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f50daf67-3fc4-447e-9beb-ec39da1779f6
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The Service offering of the demand
+            name: service_offering_name
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 94fcae80-d874-4a7e-a778-83e1e1c1139d
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The most recent comments made on the demand
+            name: u_most_recent_comments
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 19c7038a-4860-4ff0-b0cf-12db6ea2ea9c
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The date the demand was closed at
+            name: closed_at
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c696afa9-d8ea-4396-b2e3-eec9eed52a5c
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The date the demand was created
+            name: sys_created_on
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 80ef7623-c274-47ba-9501-e669170a142d
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: The ServiceNow system id for the demand
+            name: sys_id
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 27e6262d-0a1d-4a63-871d-921fd3f7dcd0
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: The most recent date the demand was updated
+            name: sys_updated_on
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ab1dce7c-9b43-408d-8b72-79c5132c6f5f
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: The date difference between the creation date and submitted date of the demand
+            name: crt_to_sub
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: accfa9ee-6c60-49c8-a57d-89d63b783d48
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: The date difference between the submitted date and the sprint state changed date of the demand
+            name: sub_to_sprt
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 49794476-6417-4f43-8496-458e327ed27d
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: The date difference between the sprint state changed date and the closed at date of the demand
+            name: sprt_to_cls
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5f156849-6178-4803-ad90-8c7bec2a7132
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: Boolean field denotes whether the demand has been deleted from the ServiceNow instance
+            name: IS_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 18a77bf1-d9ee-4514-9e65-36125efa8c96
+              stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: sys_class_name
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SERVICENOW', 'Demands') }}
+      name: Demands
+      schema: ""
+      sqlType: Source
+      table: Demands
+      type: sourceInput
+    stepCounter: cf59149e-59df-4512-b86b-677a4ea118e5

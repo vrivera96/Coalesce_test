@@ -1,5 +1,5 @@
 steps:
-  DMN_DEMAND-99e8d059-462f-4c79-902b-e8bb4c04d500:
+  TASK-5a37468f-4461-4ba4-8657-b4a89cb5538d:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: df7f4edb-a879-4e46-a6f1-c74e8071cb3a
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: bfd0680e-768e-4cca-ad4c-58299dff20b3
+              stepCounter: 5a37468f-4461-4ba4-8657-b4a89cb5538d
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d8f8d768-4ff7-4890-a0ba-989d528e140c
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: fdb4a472-40d7-4f8d-b155-c332b6816b8c
+              stepCounter: 5a37468f-4461-4ba4-8657-b4a89cb5538d
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: cd8331eb-f3b0-4724-a005-6baa57c828de
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: ec12b147-d7dc-4e0f-bf7d-719ceb8fd05c
+              stepCounter: 5a37468f-4461-4ba4-8657-b4a89cb5538d
             config: {}
             dataType: BOOLEAN
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: e218a4a3-070c-4e5e-86d3-fec6f568e13a
-              stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+              columnCounter: f76cc97b-6134-4962-8953-95325ef4d8ea
+              stepCounter: 5a37468f-4461-4ba4-8657-b4a89cb5538d
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -69,10 +69,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SERVICENOW', 'DMN_DEMAND') }}
-      name: DMN_DEMAND
+          joinCondition: FROM {{ ref('SERVICENOW', 'TASK') }}
+      name: TASK
       schema: ""
       sqlType: Source
-      table: DMN_DEMAND
+      table: TASK
       type: sourceInput
-    stepCounter: 99e8d059-462f-4c79-902b-e8bb4c04d500
+    stepCounter: 5a37468f-4461-4ba4-8657-b4a89cb5538d
