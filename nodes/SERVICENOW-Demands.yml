@@ -461,6 +461,27 @@ steps:
                   - columnCounter: f24fc714-7335-402f-a796-300c4b83712a
                     stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7cf1fa8d-c0d8-478f-a814-5f8b21955053
+              stepCounter: 5e2c1b8f-15fe-40b2-a973-72360209d020
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: sys_class_name
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: de91323e-ed18-4551-a0f0-f2aafa342adb
+                    stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4
+                transform: ""
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

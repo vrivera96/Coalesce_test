@@ -337,11 +337,7 @@ steps:
               - columnReferences:
                   - columnCounter: 1123b5ff-bf5f-4d18-8c7c-dcd2af21b107
                     stepCounter: cbfcd0b4-1547-473d-a8b7-9d07855ce088
-                transform: |-
-                  case 
-                      when "STG_DMN_DEMAND"."department_value" = '9914e4e8dbeed4104fc5c6891396192d' then '9914e4e8dbeed4104fc5c6891396192d'
-                      else "STG_DMN_DEMAND"."business_unit_value"
-                  end 
+                transform: ""
           - columnReference:
               columnCounter: 954cdf12-97f6-472f-ba5d-a91b64a6e8e6
               stepCounter: 5b7e2500-340d-40ba-80b3-6d26be1d6be4
@@ -2385,7 +2381,7 @@ steps:
               - columnReferences:
                   - columnCounter: 4cb413bd-e869-4811-b80c-5b77431fed98
                     stepCounter: 66c64376-3f63-4382-97d8-2773a8caf31c
-                transform: Case when "STG_CMN_DEPARTMENT"."name" like 'Economic%' then 'Economic Development Agency' else "STG_BUSINESS_UNIT"."name" end
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
